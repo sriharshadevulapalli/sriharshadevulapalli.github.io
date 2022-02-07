@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sriharsha Devulapalli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+
+    body {
+        font-family: "Cormorant", monospace;
+        font-size: 22px;
+        color: rgba(0,0,255,1);
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+     h1 {
+        font-family: "Cormorant", monospace;
+        font-size: 30px;
+        color: rgba(0,0,255,1);
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    #container {
+      padding: 10px;
+      /*max-width: 960px;*/
+    }
+    a {
+        background: white;
+        color: blue;
+        text-decoration: none;
+        /*padding: 0px 8px 3px;*/
+        border-radius: 2px;
+        border-bottom: 1px solid blue;
+        transition: .4s all;
+    }
+    a:hover {
+        background-color: rgba(0,0,255,1);
+        color: white;
+    }
+    span.date {
+      margin-right: 11px;
+    }
+    #links p {
+      text-indent: -117px;
+      margin-left: 117px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    
+    .responsive {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  </style>
+
+</head>
+<body>
+  <div id="container">
+    <section class="top">
+      ==============
+      <br>
+      <h1>A Look at the Indian Restaurant Scene in NYC</h1>
+      <div class="story">
+      <p>As a graduate student living in New York City, I often miss food from home. Indian food is delicious and can be time consuming to make. Unfortunately for us, the courseload at the J school means we rarely get time to cook Indian food. That leaves us with one option. Eating outside. </p>
+
+      <p>New York City is one of the world's most diverse cities for cuisine and there's no dearth of Indian restaurants. Jackson Heights and Murray Hill are neighbourhoods associated with Indian food. Are there other neighbourhoods too? What foods are most common on Indian restaurant menus, how diverse are there cuisines? Do they have dosas on their menu? We try finding out. </p>
+
+      <p> For the purposes of this story, we've used Yelp API to extract a list of restaurants associated with Indian cuisine in the <a href="https://en.wikipedia.org/wiki/New_York_metropolitan_area" target="_blank">Tri-state area</a>.Because the spatiality of Indian cuisines is not restricted to the modern geographical nation state of India alone, restaurants with Pakistani, Bangladeshi, Nepali, Afghani and Sri Lankan Food also were considered for this analysis. 
+
+      <p> Most people who go into a restaurant consider three things : how popular it is, how highly rated it is and what kind of food one can expect at the restaurant. The following is a map of restaurants in the region. The bigger the size of the circle, the greater are the number of people who have reviewed the restaurant - a sign of the popularity of the restaurant. The color of the bubbles indicate the average rating score of the restaurant. The greener the bubble, the higher rated it is. 
+        <br>
+        <br>
+
+        <img src="map_of_indian_restaurants_in_nyc.png" alt="A Map of Indian Restaurants in the Tri State Area. Most of these restaurants are concentrated in Downtown Manhattan, Jackson Heights in Queens, Edison in New Jersey" class="responsive">
+        <br>
+        <br>
+
+      <p> According to Yelp API ratings, there are only 3 restaurants with a really high number of reviews and a high rating : They're the Drunken Munkey in the Upper East Side, Bengal Tiger in Midtown, and Seva Canteen in Jackson Heights. So if you're going to rely on the wisdom of the website - you should definitely go eat there. 
+
+      <p> I was also interested in finding out what foods are one likely to come across on a menu at a restaurant in an Indian Restaurant. Turns out Mango Lassi is the most popular dish across restaurants in the region.Followed by Garlic Naan, Gulab Jamun, Rasmalai, and Chicken Tikka Masala. <p>
+
+      I also looked at the cost of the top 50 popular items across price categories. 
+        <br>
+        <br>
+
+        <img src="top_50_prices_by_category.png" alt="A Dot plot of price ranges of the top 50 popular Indian food items across cheap and mid range eateries." class="responsive">
+        <br>
+        <br>
+
+      I tried looking at prices based on ratings. Are places with higher ratings also more expensive?
+
+       <img src="top_50_prices_by_ratings.png" alt="A Dot plot of price ranges of the top 50 popular Indian food items across ratings of 3,3.5,4, and 4.5." class="responsive">
+
+      <p> This is a work in progress. The code for the project is available <a href="" target="_blank">here</a>
+
+
+
+        <br>
+        <br>
+
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
