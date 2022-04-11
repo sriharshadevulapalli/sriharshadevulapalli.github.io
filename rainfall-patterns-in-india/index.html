@@ -1,115 +1,324 @@
-
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Harsha - Indian Rainfall</title>
-  <meta property="og:title" content="Rainfall patterns in India">
-<meta property="og:description" content="Rains in the country">
-<meta property="og:type" content="article">
-<meta property="og:image" content="https://github.com/jsoma/data-studio-projects-2022/blob/main/screenshots/sriharshadevulapalli.github.io/rainfall-patterns-in-india_index.html-mobile-full.jpg">
-<meta name="twitter:creator" content="@HarshaReports">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-  <style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    body {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 22px;
-        color: black;
-        font-weight: 400;
-        line-height: 1.4;
-    }
+    <style>
+        body {
+            margin:auto;
+            padding:50px 10px;
+            font-family: 'Open Sans', sans-serif;
+        }
 
-     h1 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 50px;
-        color: black;
-        font-weight: 700;
-        line-height: 1.4;
-        text-align: center
-    }
+        .serif {
+            font-family: 'Lora', serif;
+        }
+        .sans-serif {
+            font-family: 'Open Sans', sans-serif;
+        }
 
-    h3 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 30px;
-        color: black;
-        font-weight: 200;
-        line-height: 1.4;
-        text-align: center
-    }
+        /* choose a light or dark theme to add to the body tag. */
+        .dark-theme {
+            background-color: #151515;
+            color: #fbfbfb;
+        }
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
 
-    #container {
-      padding: 40px;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-    a {
-        background: white;
-        color: blue;
-        text-decoration: none;
-        /*padding: 0px 8px 3px;*/
-        border-radius: 2px;
-        border-bottom: 1px solid blue;
-        transition: .4s all;
-    }
-    a:hover {
-        background-color: rgba(0,0,255,1);
-        color: white;
-    }
-    span.date {
-      margin-right: 11px;
-    }
-    #links p {
-      text-indent: -117px;
-      margin-left: 117px;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+        .header {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
 
+        .story-body, .header, .chart-section, .footer {
+            margin:auto;
+            max-width: 700px;
+        }
+
+        .footer {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+
+        .chart-section.wide{
+            width:100%;
+            max-width:1200px;
+        }
+
+        .chart-section.wide p.chart-title {
+            width:100%;
+            max-width:700px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .chart-section.wide p.chart-subhead {
+            width:100%;
+            max-width:700px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+
+        /* text styles */
+
+        p.kicker {
+            font-size:1rem;
+            text-transform:uppercase;
+        }
+
+        .text-center {
+            text-align:center;
+        }
+
+        h1.headline {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+            font-weight: 800;
+        }
+
+        h2.subhead {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-bottom:0;
+            margin-top: 15px;
+            font-weight: 400;
+        }
+
+        p.body-text {
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-top:0;
+            margin-bottom:15px;
+        }
+
+        h3.section-head {
+            font-size:2rem;
+            margin:40px 0 10px 0;
+            font-weight:700;
+            line-height:1.3;
+        }
+
+        .byline {
+            font-size: 1.1rem;
+            line-height: 0.75;
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            line-height: 1;
+            margin-top: 10px;
+            font-weight:400;
+            text-transform:uppercase;
+            letter-spacing:0.5px;
+        }
+
+
+        p.note {
+            font-size:0.85rem;
+        }
+
+        /* chart styles */
+
+        .chart-section {
+            width:100%;
+            max-width:1200px;
+            padding:20px 0px;
+        }
+
+        .story-body .chart-section {
+            padding-top:0px;
+        }
+
+
+        .chart-row {
+            display:flex;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+
+        p.chart-title {
+            font-size:1.3rem;
+            font-weight:700;
+            max-width:700px;
+            margin:0px auto 5px auto;
+        }
+        p.chart-subhead {
+            margin:0 auto;
+            max-width:700px;
+            font-size:1rem;
+            margin-bottom:15px;
+        }
+
+        p.chart-label {
+            margin:0 0 5px 0;
+            font-size:0.85rem;
+            text-transform:uppercase;
+            font-weight:600;
+        }
+
+        .chart-row .chart {
+            width:100%;
+            padding-right:15px;
+            min-width:calc(25% - 15px);
+
+        }
+
+
+
+        p.chart-source {
+            font-size:0.85rem;
+            margin:0;
+        }
+
+
+
+
+
+        /* photos */
+
+        .photo-section {
+            padding:30px 0px;
+            width:100%;
+            margin:auto;
+            display:flex;
+            max-width:1200px;
+        }
+
+        .photo {
+            width:100%;
+            padding-right:15px;
+        }
+        .photo img {
+            width:100%; 
+        }
+
+        p.caption {
+            font-size:0.9rem;
+            margin:0;
+        }
+
+
+
+        /* mobile */
+
+        @media (max-width:700px) {
+
+            .chart-row {
+                display:block;
+            }
+
+            .chart-row .chart {
+                padding:0;
+            }
+
+            .photo-section {
+                display:block;
+            }
+            .photo {
+                padding:0;
+            }
+
+        }
+    </style>
+    <style>
+        /* These are the styles for ai2html */
+        
+        #g-template-laptop, #g-template-medium, #g-template-mobile {
+            display: none;
+        }
+
+        @media (max-width: 490px) {
+            #g-template-mobile {
+                display: block;
+            }
+        }
+
+        @media (min-width: 490px) and (max-width: 620px) {
+            #g-template-laptop {
+                display: block;
+            }
+        }
+
+        @media (min-width: 620px)  {
+            #g-template-medium {
+                display: block;
+            }
+        }
+
+    </style>
     
-    .responsive {
-  width: 70%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+    <!-- google fonts: Open Sans (sans-serif) and Lora (serif) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+      
+    <title>This is your title</title>
+  </head>
 
+  <body class="light-theme"> <!-- all of the content on your html page goes inside the body -->
+
+    <div class="header">
+      <p class="kicker">RAIN RAIN GO AWAY</p>
+      <h1 class="headline">A drier and wetter India</h1>
+      <h2 class="subhead">In the era of climate change, India is getting drier and wetter. It depends on where you live.</h2>
+      <p class="byline">Sriharsha Devulapalli</p>
+
+    </div>
+
+    <div class="story-body">
+      <p class="body-text serif">India has always been vulnerable to extreme weather events. Droughts in particular have been more regularly reoccuring in the last few years. Data shows that change in rainfall patterns have an impact on it.
+
+An analysis of rainfall data reveals that the Gangetic plain, home to three hundred million people has seen a drastic decline in rainfall in the 2010s.</p>
+    </div>
+
+    <div class="chart-section">
+        <div class="chart-row">
+          <div class="chart">
+
+
+
+<!-- Generated by ai2html v0.106.0 - 2022-04-11 09:14 -->
+<!-- ai file: template.ai -->
 <style media="screen,print">
-  #g-Layout-2_pdf-box ,
-  #g-Layout-2_pdf-box .g-artboard {
+  #g-template-box ,
+  #g-template-box .g-artboard {
     margin:0 auto;
   }
-  #g-Layout-2_pdf-box p {
+  #g-template-box p {
     margin:0;
   }
-  #g-Layout-2_pdf-box .g-aiAbs {
+  #g-template-box .g-aiAbs {
     position:absolute;
   }
-  #g-Layout-2_pdf-box .g-aiImg {
+  #g-template-box .g-aiImg {
     position:absolute;
     top:0;
     display:block;
     width:100% !important;
   }
-  #g-Layout-2_pdf-box .g-aiSymbol {
+  #g-template-box .g-aiSymbol {
     position: absolute;
     box-sizing: border-box;
   }
-  #g-Layout-2_pdf-box .g-aiPointText p { white-space: nowrap; }
-  #g-Layout-2_pdf-Artboard_2 {
+  #g-template-box .g-aiPointText p { white-space: nowrap; }
+  #g-template-full {
     position:relative;
     overflow:hidden;
   }
-  #g-Layout-2_pdf-Artboard_2 p {
-    font-weight:500;
-    line-height:18px;
+  #g-template-full p {
+    font-family:Source Sans Pro;
+    font-weight:400;
+    line-height:14px;
     opacity:1;
     letter-spacing:0em;
-    font-size:15px;
+    font-size:12px;
     text-align:left;
     color:rgb(0,0,0);
     text-transform:none;
@@ -120,127 +329,293 @@
     height:auto;
     position:static;
   }
-  #g-Layout-2_pdf-Artboard_2 .g-pstyle0 {
-    font-weight:700;
-    line-height:20px;
-    height:20px;
-    font-size:17px;
+  #g-template-full .g-pstyle0 {
+    font-weight:600;
+    line-height:24px;
+    height:24px;
+    font-size:20px;
   }
-  #g-Layout-2_pdf-Artboard_2 .g-pstyle1 {
+  #g-template-full .g-pstyle1 {
+    line-height:18px;
+    height:18px;
+    font-size:15px;
+  }
+  #g-template-full .g-pstyle2 {
     line-height:17px;
     height:17px;
     font-size:14px;
-    text-align:center;
   }
-  #g-Layout-2_pdf-Artboard_2 .g-pstyle2 {
+  #g-template-laptop {
+    position:relative;
+    overflow:hidden;
+  }
+  #g-template-laptop p {
+    font-family:Source Sans Pro;
+    font-weight:400;
+    line-height:14px;
+    opacity:1;
+    letter-spacing:0em;
+    font-size:12px;
+    text-align:left;
+    color:rgb(0,0,0);
+    text-transform:none;
+    padding-bottom:0;
+    padding-top:0;
+    mix-blend-mode:normal;
+    font-style:normal;
+    height:auto;
+    position:static;
+  }
+  #g-template-laptop .g-pstyle0 {
+    font-weight:600;
+    line-height:19px;
+    height:19px;
+    font-size:16px;
+  }
+  #g-template-laptop .g-pstyle1 {
     line-height:17px;
     height:17px;
     font-size:14px;
   }
-
-
-  </style>
-
-</head>
-<body>
-  <div id="container">
-    <section class="top">
-      ==============
-      <br>
-      <h1>A drier and wetter India</h1>
-      <div class="story">
-      <h3> In the era of climate change, India is getting both drier and wetter. It depends on where you live. </h3>
-
-     <p> India has always been vulnerable to extreme weather events. Droughts in particular have been more regularly reoccuring in the last few years. Data shows that change in rainfall patterns have an impact on it.  </p>
-
-      <p> An analysis of rainfall data reveals that the Gangetic plain, home to three hundred million people has seen a drastic decline in rainfall in the 2010s. </p>
-      
-<!-- Generated by ai2html v0.106.0 - 2022-02-19 10:41 -->
-<!-- ai file: Layout 2.pdf -->
+  #g-template-mobile {
+    position:relative;
+    overflow:hidden;
+  }
+  #g-template-mobile p {
+    font-family:Source Sans Pro;
+    font-weight:400;
+    line-height:14px;
+    opacity:1;
+    letter-spacing:0em;
+    font-size:12px;
+    text-align:left;
+    color:rgb(0,0,0);
+    text-transform:none;
+    padding-bottom:0;
+    padding-top:0;
+    mix-blend-mode:normal;
+    font-style:normal;
+    height:auto;
+    position:static;
+  }
+  #g-template-mobile .g-pstyle0 {
+    font-weight:600;
+    line-height:17px;
+    height:17px;
+    font-size:14px;
+  }
+  #g-template-mobile .g-pstyle1 {
+    height:14px;
+  }
 
 </style>
 
-<div id="g-Layout-2_pdf-box" class="ai2html">
+<div id="g-template-box" class="ai2html">
 
-  <!-- Artboard: Artboard_2 -->
-  <div id="g-Layout-2_pdf-Artboard_2" class="g-artboard" style="max-width: 956px;max-height: 1132px" data-aspect-ratio="0.845" data-min-width="0">
-<div style="padding: 0 0 118.3817% 0;"></div>
-    <img id="g-Layout-2_pdf-Artboard_2-img" class="g-aiImg" alt="" src="Layout-2_pdf-Artboard_2.png"/>
-    <div id="g-ai0-1" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:3.9178%;margin-top:-21.3px;left:3.0863%;width:336px;">
+  <!-- Artboard: full -->
+  <div id="g-template-full" class="g-artboard" style="width:620px; height:713.626447390504px;" data-aspect-ratio="0.869" data-min-width="620">
+<div style=""></div>
+    <img id="g-template-full-img" class="g-aiImg" alt="" src="template-full.png"/>
+    <div id="g-ai0-1" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:4.9522%;margin-top:-25.3px;left:2.152%;width:392px;">
       <p class="g-pstyle0">Change in Annual Rainfall (2010s) </p>
       <p class="g-pstyle0">compared to historical average (1950-2000)</p>
     </div>
-    <div id="g-ai0-2" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:8.5139%;margin-top:-9.4px;left:10.0458%;margin-left:-62.5px;width:125px;">
+    <div id="g-ai0-2" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:5.0328%;margin-top:-9.9px;left:76.4275%;width:132px;">
       <p class="g-pstyle1">Extreme Deficient</p>
     </div>
-    <div id="g-ai0-3" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:12.3134%;margin-top:-9.4px;left:7.3785%;margin-left:-37px;width:74px;">
+    <div id="g-ai0-3" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:9.657%;margin-top:-9.9px;left:76.4275%;width:78px;">
       <p class="g-pstyle1">Deficient</p>
     </div>
-    <div id="g-ai0-4" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:16.0245%;margin-top:-9.4px;left:8.9998%;margin-left:-52.5px;width:105px;">
+    <div id="g-ai0-4" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:14.2813%;margin-top:-9.9px;left:76.4275%;width:111px;">
       <p class="g-pstyle1">Below Normal</p>
     </div>
-    <div id="g-ai0-5" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:19.824%;margin-top:-9.4px;left:8.9998%;margin-left:-52.5px;width:105px;">
+    <div id="g-ai0-5" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:18.9056%;margin-top:-9.9px;left:76.4275%;width:111px;">
       <p class="g-pstyle1">Above Normal</p>
     </div>
-    <div id="g-ai0-6" class="g-Layer_5 g-aiAbs" style="top:20.3229%;left:64.7725%;width:18.0962%;">
-      <p>The Gangetic Plain ranging from Haryana to West Bengal has seen a decline in annual rainfall in the 2010s compared to their historical average</p>
-    </div>
-    <div id="g-ai0-7" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:23.5351%;margin-top:-9.4px;left:6.6462%;margin-left:-30px;width:60px;">
+    <div id="g-ai0-6" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:23.5298%;margin-top:-9.9px;left:76.4275%;width:62px;">
       <p class="g-pstyle1">Excess</p>
     </div>
-    <div id="g-ai0-8" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:27.3346%;margin-top:-9.4px;left:8.4768%;margin-left:-47.5px;width:95px;">
+    <div id="g-ai0-7" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:28.1541%;margin-top:-9.9px;left:76.4275%;width:100px;">
       <p class="g-pstyle1">Large Excess</p>
     </div>
-    <div id="g-ai0-9" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:33.8733%;margin-top:-9.4px;left:33.2334%;width:58px;">
+    <div id="g-ai0-8" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:32.98%;margin-top:-9.4px;left:33.8354%;width:58px;">
       <p class="g-pstyle2">DELHI</p>
     </div>
-    <div id="g-ai0-10" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:38.0262%;margin-top:-9.4px;left:42.0143%;width:75px;">
+    <div id="g-ai0-9" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:36.4832%;margin-top:-9.4px;left:41.6406%;width:75px;">
       <p class="g-pstyle2">Lucknow</p>
     </div>
-    <div id="g-ai0-11" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:40.1469%;margin-top:-9.4px;left:76.2433%;width:78px;">
+    <div id="g-ai0-10" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:39.2858%;margin-top:-9.4px;left:76.0164%;width:78px;">
       <p class="g-pstyle2">Guwahati</p>
     </div>
-    <div id="g-ai0-12" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:42.7977%;margin-top:-9.4px;left:59.2867%;width:56px;">
+    <div id="g-ai0-11" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:41.9483%;margin-top:-9.4px;left:59.3868%;width:56px;">
       <p class="g-pstyle2">Patna</p>
     </div>
-    <div id="g-ai0-13" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:48.6295%;margin-top:-9.4px;left:12.7723%;width:93px;">
+    <div id="g-ai0-12" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:47.5535%;margin-top:-9.4px;left:12.1555%;width:93px;">
       <p class="g-pstyle2">Ahmedabad</p>
     </div>
-    <div id="g-ai0-14" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:49.5131%;margin-top:-9.4px;left:65.5214%;width:66px;">
+    <div id="g-ai0-13" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:48.6745%;margin-top:-9.4px;left:65.5012%;width:66px;">
       <p class="g-pstyle2">Kolkata</p>
     </div>
-    <div id="g-ai0-15" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:60.2931%;margin-top:-9.4px;left:11.9442%;width:69px;">
+    <div id="g-ai0-14" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:59.3243%;margin-top:-9.4px;left:11.6715%;width:69px;">
       <p class="g-pstyle2">Mumbai</p>
     </div>
-    <div id="g-ai0-16" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:64.2693%;margin-top:-9.4px;left:34.0492%;width:86px;">
+    <div id="g-ai0-15" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:63.2479%;margin-top:-9.4px;left:36.3276%;width:86px;">
       <p class="g-pstyle2">Hyderabad</p>
     </div>
-    <div id="g-ai0-17" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:77.1699%;margin-top:-9.4px;left:25.7581%;width:82px;">
+    <div id="g-ai0-16" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:76.5602%;margin-top:-9.4px;left:26.504%;width:82px;">
       <p class="g-pstyle2">Bengaluru</p>
     </div>
-    <div id="g-ai0-18" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:77.2582%;margin-top:-9.4px;left:43.3299%;width:70px;">
+    <div id="g-ai0-17" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:76.7004%;margin-top:-9.4px;left:43.7372%;width:70px;">
       <p class="g-pstyle2">Chennai</p>
     </div>
-    <div id="g-ai0-19" class="g-Layer_5 g-aiAbs" style="top:94.0154%;left:2.599%;width:97.3849%;">
+    <div id="g-ai0-18" class="g-Layer_5 g-aiAbs" style="top:91.6446%;left:3.0205%;width:93.7097%;">
+      <p>Source :  Pai D.S., Latha Sridhar, Rajeevan M., Sreejith O.P., Satbhai N.S. and Mukhopadhyay B., 2014: Development of a new high spatial resolution (0.25&deg; X 0.25&deg;)Long period (1901-2010) daily gridded rainfall data set over India and its comparison with existing data sets over the region; MAUSAM, 65, 1(January 2014), pp1-18.</p>
+    </div>
+  </div>
+
+  <!-- Artboard: laptop -->
+  <div id="g-template-laptop" class="g-artboard" style="width:490px; height:574.95025101891px;" data-aspect-ratio="0.852" data-min-width="490" data-max-width="619">
+<div style=""></div>
+    <img id="g-template-laptop-img" class="g-aiImg" alt="" src="template-laptop.png"/>
+    <div id="g-ai1-1" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:4.2043%;margin-top:-20.2px;left:3.5164%;width:318px;">
+      <p class="g-pstyle0">Change in Annual Rainfall (2010s) </p>
+      <p class="g-pstyle0">compared to historical average (1950-2000)</p>
+    </div>
+    <div id="g-ai1-2" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:4.0619%;margin-top:-9.4px;left:75.154%;width:125px;">
+      <p class="g-pstyle1">Extreme Deficient</p>
+    </div>
+    <div id="g-ai1-3" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:8.4101%;margin-top:-9.4px;left:75.154%;width:74px;">
+      <p class="g-pstyle1">Deficient</p>
+    </div>
+    <div id="g-ai1-4" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:12.7583%;margin-top:-9.4px;left:75.154%;width:105px;">
+      <p class="g-pstyle1">Below Normal</p>
+    </div>
+    <div id="g-ai1-5" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:17.2805%;margin-top:-9.4px;left:75.154%;width:105px;">
+      <p class="g-pstyle1">Above Normal</p>
+    </div>
+    <div id="g-ai1-6" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:21.6287%;margin-top:-9.4px;left:75.154%;width:60px;">
+      <p class="g-pstyle1">Excess</p>
+    </div>
+    <div id="g-ai1-7" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:25.9769%;margin-top:-9.4px;left:75.154%;width:95px;">
+      <p class="g-pstyle1">Large Excess</p>
+    </div>
+    <div id="g-ai1-8" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:30.499%;margin-top:-9.4px;left:32.6935%;width:58px;">
+      <p class="g-pstyle1">DELHI</p>
+    </div>
+    <div id="g-ai1-9" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:34.4993%;margin-top:-9.4px;left:36.6472%;width:75px;">
+      <p class="g-pstyle1">Lucknow</p>
+    </div>
+    <div id="g-ai1-10" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:36.7604%;margin-top:-9.4px;left:72.6993%;width:78px;">
+      <p class="g-pstyle1">Guwahati</p>
+    </div>
+    <div id="g-ai1-11" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:38.6736%;margin-top:-9.4px;left:55.9887%;width:56px;">
+      <p class="g-pstyle1">Patna</p>
+    </div>
+    <div id="g-ai1-12" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:44.4132%;margin-top:-9.4px;left:4.1169%;width:93px;">
+      <p class="g-pstyle1">Ahmedabad</p>
+    </div>
+    <div id="g-ai1-13" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:45.4568%;margin-top:-9.4px;left:65.0293%;width:66px;">
+      <p class="g-pstyle1">Kolkata</p>
+    </div>
+    <div id="g-ai1-14" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:57.6318%;margin-top:-9.4px;left:6.5274%;width:69px;">
+      <p class="g-pstyle1">Mumbai</p>
+    </div>
+    <div id="g-ai1-15" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:59.545%;margin-top:-9.4px;left:33.9531%;width:86px;">
+      <p class="g-pstyle1">Hyderabad</p>
+    </div>
+    <div id="g-ai1-16" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:72.4157%;margin-top:-9.4px;left:18.9935%;width:82px;">
+      <p class="g-pstyle1">Bengaluru</p>
+    </div>
+    <div id="g-ai1-17" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:73.6332%;margin-top:-9.4px;left:42.6435%;width:70px;">
+      <p class="g-pstyle1">Chennai</p>
+    </div>
+    <div id="g-ai1-18" class="g-Layer_5 g-aiAbs" style="top:88.1815%;left:3.3483%;width:92.0408%;">
+      <p>Source :  Pai D.S., Latha Sridhar, Rajeevan M., Sreejith O.P., Satbhai N.S. and Mukhopadhyay B., 2014: Development of a new high spatial resolution (0.25&deg; X 0.25&deg;)Long period (1901-2010) daily gridded rainfall data set over India and its comparison with existing data sets over the region; MAUSAM, 65, 1(January 2014), pp1-18.</p>
+    </div>
+  </div>
+
+  <!-- Artboard: mobile -->
+  <div id="g-template-mobile" class="g-artboard" style="max-width: 375px;max-height: 496px" data-aspect-ratio="0.756" data-min-width="0" data-max-width="489">
+<div style="padding: 0 0 132.3527% 0;"></div>
+    <img id="g-template-mobile-img" class="g-aiImg" alt="" src="template-mobile.png"/>
+    <div id="g-ai2-1" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:4.1985%;margin-top:-17.8px;left:2.5039%;width:281px;">
+      <p class="g-pstyle0">Change in Annual Rainfall (2010s) </p>
+      <p class="g-pstyle0">compared to historical average (1950-2000)</p>
+    </div>
+    <div id="g-ai2-2" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:9.8186%;margin-top:-7.7px;left:72.7239%;width:110px;">
+      <p class="g-pstyle1">Extreme Deficient</p>
+    </div>
+    <div id="g-ai2-3" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:13.0423%;margin-top:-7.7px;left:72.7239%;width:67px;">
+      <p class="g-pstyle1">Deficient</p>
+    </div>
+    <div id="g-ai2-4" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:16.266%;margin-top:-7.7px;left:72.7239%;width:93px;">
+      <p class="g-pstyle1">Below Normal</p>
+    </div>
+    <div id="g-ai2-5" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:19.2883%;margin-top:-7.7px;left:72.7239%;width:93px;">
+      <p class="g-pstyle1">Above Normal</p>
+    </div>
+    <div id="g-ai2-6" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:22.512%;margin-top:-7.7px;left:72.7239%;width:54px;">
+      <p class="g-pstyle1">Excess</p>
+    </div>
+    <div id="g-ai2-7" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:25.7357%;margin-top:-7.7px;left:72.7239%;width:84px;">
+      <p class="g-pstyle1">Large Excess</p>
+    </div>
+    <div id="g-ai2-8" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:29.3623%;margin-top:-7.7px;left:23.8872%;width:52px;">
+      <p class="g-pstyle1">DELHI</p>
+    </div>
+    <div id="g-ai2-9" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:32.1831%;margin-top:-7.7px;left:39.7203%;width:66px;">
+      <p class="g-pstyle1">Lucknow</p>
+    </div>
+    <div id="g-ai2-10" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:34.8024%;margin-top:-7.7px;left:80.5677%;width:69px;">
+      <p class="g-pstyle1">Guwahati</p>
+    </div>
+    <div id="g-ai2-11" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:35.8098%;margin-top:-7.7px;left:56.7112%;width:50px;">
+      <p class="g-pstyle1">Patna</p>
+    </div>
+    <div id="g-ai2-12" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:41.6527%;margin-top:-7.7px;left:9.0927%;width:81px;">
+      <p class="g-pstyle1">Ahmedabad</p>
+    </div>
+    <div id="g-ai2-13" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:41.6527%;margin-top:-7.7px;left:64.3007%;width:59px;">
+      <p class="g-pstyle1">Kolkata</p>
+    </div>
+    <div id="g-ai2-14" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:52.7342%;margin-top:-7.7px;left:7.9091%;width:62px;">
+      <p class="g-pstyle1">Mumbai</p>
+    </div>
+    <div id="g-ai2-15" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:57.7713%;margin-top:-7.7px;left:22.983%;width:76px;">
+      <p class="g-pstyle1">Hyderabad</p>
+    </div>
+    <div id="g-ai2-16" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:65.2261%;margin-top:-7.7px;left:23.4364%;width:73px;">
+      <p class="g-pstyle1">Bengaluru</p>
+    </div>
+    <div id="g-ai2-17" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:66.6365%;margin-top:-7.7px;left:44.0492%;width:62px;">
+      <p class="g-pstyle1">Chennai</p>
+    </div>
+    <div id="g-ai2-18" class="g-Layer_5 g-aiAbs" style="top:83.0105%;left:6.378%;width:89.8667%;">
       <p>Source :  Pai D.S., Latha Sridhar, Rajeevan M., Sreejith O.P., Satbhai N.S. and Mukhopadhyay B., 2014: Development of a new high spatial resolution (0.25&deg; X 0.25&deg;)Long period (1901-2010) daily gridded rainfall data set over India and its comparison with existing data sets over the region; MAUSAM, 65, 1(January 2014), pp1-18.</p>
     </div>
   </div>
 
 </div>
 
+<!-- End ai2html - 2022-04-11 09:14 -->
 
-      <p> The map above, created using data from researchers at the Indian Meterological Department shows that the western parts of the country got more rain in the 2010s than their historical averages. </p>
 
-            <p> It is unclear whether the changes in rainfall this decade are a permanent feature of our warming climate or they reflect long term weather variability. But it is consistent with predictions from models which expect to see drastic changes.  </p>
 
-             <p> This story is a work in progress. Please find the github repository <a target="_blank" href="https://github.com/sriharshadevulapalli/sriharshadevulapalli.github.io/tree/main/rainfall-patterns-in-india"> here </a>.</p>
 
-        <br>
-        <br>
 
-      </div>
-    </section>
-  </div>
 
-</body>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="story-body">
+        <p class="body-text serif">The map above, created using data from researchers at the Indian Meterological Department shows that the western parts of the country got more rain in the 2010s than their historical averages.
+
+It is unclear whether the changes in rainfall this decade are a permanent feature of our warming climate or they reflect long term weather variability. But it is consistent with predictions from models which expect to see drastic changes.
+
+This story is a work in progress. Please find the github repository here .</p>
+    </div>
+      
+  </body>
 </html>
