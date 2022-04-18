@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta property="og:title" content="Californian Wildfires">
+<meta property="og:description" content="The US West is Burnin'">
+<meta property="og:image" content="https://github.com/jsoma/data-studio-projects-2022/blob/main/screenshots/sriharshadevulapalli.github.io/central-vista_index.html-mobile-full.jpg">
+<meta name="twitter:creator" content="@HarshaReports">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin:auto;
+            padding:50px 10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .serif {
+            font-family: 'Lora', serif;
+        }
+        .sans-serif {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* choose a light or dark theme to add to the body tag. */
+        .dark-theme {
+            background-color: #151515;
+            color: #fbfbfb;
+        }
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        .header {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+
+        .story-body, .header, .chart-section, .footer {
+            margin:auto;
+            max-width: 700px;
+        }
+
+        .footer {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+
+        .chart-section.wide{
+            width:50%;
+            max-width:600px;
+        }
+
+        .chart-section.wide p.chart-title {
+            width:50%;
+            max-width:600px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .chart-section.wide p.chart-subhead {
+            width:50%;
+            max-width:600px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+
+        /* text styles */
+
+        p.kicker {
+            font-size:1rem;
+            text-transform:uppercase;
+        }
+
+        .text-center {
+            text-align:center;
+        }
+
+        h1.headline {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+            font-weight: 800;
+        }
+
+        h2.subhead {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-bottom:0;
+            margin-top: 15px;
+            font-weight: 400;
+        }
+
+        p.body-text {
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-top:0;
+            margin-bottom:15px;
+        }
+
+        h3.section-head {
+            font-size:2rem;
+            margin:40px 0 10px 0;
+            font-weight:700;
+            line-height:1.3;
+        }
+
+        .byline {
+            font-size: 1.1rem;
+            line-height: 0.75;
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            line-height: 1;
+            margin-top: 10px;
+            font-weight:400;
+            text-transform:uppercase;
+            letter-spacing:0.5px;
+        }
+
+
+        p.note {
+            font-size:0.85rem;
+        }
+
+        /* chart styles */
+
+        .chart-section {
+            width:50%;
+            max-width:600px;
+            padding:20px 0px;
+        }
+
+        .story-body .chart-section {
+            padding-top:0px;
+        }
+
+
+        .chart-row {
+            display:flex;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+
+        p.chart-title {
+            font-size:1.3rem;
+            font-weight:700;
+            max-width:700px;
+            margin:0px auto 5px auto;
+        }
+        p.chart-subhead {
+            margin:0 auto;
+            max-width:700px;
+            font-size:1rem;
+            margin-bottom:15px;
+        }
+
+        p.chart-label {
+            margin:0 0 5px 0;
+            font-size:0.85rem;
+            text-transform:uppercase;
+            font-weight:600;
+        }
+
+        .chart-row .chart {
+            width:100%;
+            padding-right:15px;
+            min-width:calc(25% - 15px);
+
+        }
+
+
+
+        p.chart-source {
+            font-size:0.85rem;
+            margin:0;
+        }
+
+
+
+
+
+        /* photos */
+
+        .photo-section {
+            padding:30px 0px;
+            width:100%;
+            margin:auto;
+            display:flex;
+            max-width:1200px;
+        }
+
+        .photo {
+            width:100%;
+            padding-right:15px;
+        }
+        .photo img {
+            width:100%;	
+        }
+
+        p.caption {
+            font-size:0.9rem;
+            margin:0;
+        }
+
+
+
+        /* mobile */
+
+        @media (max-width:700px) {
+
+            .chart-row {
+                display:block;
+            }
+
+            .chart-row .chart {
+                padding:0;
+            }
+
+            .photo-section {
+                display:block;
+            }
+            .photo {
+                padding:0;
+            }
+
+        }
+    </style>
+    <style>
+        /* These are the styles for ai2html */
+        
+        #g-template-laptop, #g-template-medium, #g-template-mobile {
+            display: none;
+        }
+
+        @media (max-width: 490px) {
+            #g-template-mobile {
+                display: block;
+            }
+        }
+
+        @media (min-width: 490px) and (max-width: 620px) {
+            #g-template-laptop {
+                display: block;
+            }
+        }
+
+        @media (min-width: 620px)  {
+            #g-template-medium {
+                display: block;
+            }
+        }
+
+    </style>
+    
+    <!-- google fonts: Open Sans (sans-serif) and Lora (serif) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+      
+    <title>This is your title</title>
+  </head>
+
+  <body class="light-theme"> <!-- all of the content on your html page goes inside the body -->
+
+    <div class="header">
+      <p class="kicker">THE WEST BURNS</p>
+      <h1 class="headline">The True Cost of Californian Wildfires</h1>
+      <h2 class="subhead">How much damage do the fires of California cost?</h2>
+      <p class="byline">Sriharsha Devulapalli</p>
+    </div>
+
+    <div class="story-body">
+      <p class="body-text serif"><p class="has-line-data" data-line-start="0" data-line-end="1">2021 continued to be yet another bad fire year for the United States. There were nearly <a href="https://www.predictiveservices.nifc.gov/intelligence/2021_statssumm/annual_report_2021.pdf">60,000 fires in the year ravaging over 7 million acres of land</a>. These numbers, despite their large magnitude, are an unfortunate reality of climate change.</p>
+<p class="has-line-data" data-line-start="2" data-line-end="3">Since the late 1990s, there has been a transition in how wildfires operate. Authorities are noticing a newer trend - the fires are getting out of control. It is becoming increasingly harder to contain them. While the number of fires has remained steady, they are going on for longer and are more intensive than ever. Lately, wildfires are burning twice the area than in the 1980s and 1990s. Some fires have gotten so bad that <a href="https://www.nytimes.com/2021/07/19/climate/bootleg-wildfire-weather.html#:~:text=Fires%20so%20extreme%20that%20they,heat%2C%20smoke%20and%20high%20wind.">they create their own weather systems</a>!</p>
+<p class="has-line-data" data-line-start="4" data-line-end="5">Ongoing <a href="https://www.carbonbrief.org/factcheck-how-global-warming-has-increased-us-wildfires">changes in temperature, drought, and snowmelt</a> have contributed to the warmer, drier conditions that make these fires difficult to fight.</p>
+<p class="has-line-data" data-line-start="6" data-line-end="7">While the wildfire numbers for 2021 are in line with the 10-year averages, the western region of the United States saw an unusually active year. California and Oregon were some of the worst affected regions.</p></p>
+
+    </div>
+
+    <div class="chart-section">
+        <div class="chart-row">
+          <div class="chart">
+
+
+<iframe title="The number of fires in 2021 were in line with the 10 year average" aria-label="Interactive line chart" id="datawrapper-chart-Ofrp0" src="https://datawrapper.dwcdn.net/Ofrp0/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="story-body">
+        <p class="body-text serif"><p class="has-line-data" data-line-start="0" data-line-end="1">Among the 60,000 fires in 2021- there were 35 significant fire incidents that caused the most damage. The National Interagency Coordination Center defines significant fire incidents as those that have burnt more than 40,000 acres of land. When put together, these 35 fires are alone responsible for sixty percent of all the area damaged due to wildfires in 2021.</p>
+<p class="has-line-data" data-line-start="2" data-line-end="3">Five fires alone burned more than two million acres of land, an area as large as Puerto Rico. Nearly all these significant fires were concentrated in the western region of the United States</p>
+</p>
+    </div>
+          <div class="chart-section">
+        <div class="chart-row">
+          <div class="chart">
+
+
+<iframe title="35 significant fires caused more damage than all other fires in 2021" aria-label="Map" id="datawrapper-chart-zeu2U" src="https://datawrapper.dwcdn.net/zeu2U/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="501"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
+        </div>
+        </div>
+    </div>
+
+        <div class="story-body">
+        <p class="body-text serif"><h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="Geographical_Spread_of_Wildfires_0"></a>Geographical Spread of Wildfires</h3>
+<p class="has-line-data" data-line-start="2" data-line-end="3">In July and August, the largest wildfires razed large swathes of Northern California and Southern Oregon. Northern California saw some incredibly massive fires that had burned down a higher than average acreage, despite a near-normal number of fires. The Northern Rocky Mountains spread across the states of Washington, Idaho, Wyoming, and Utah saw both larger and more severe fires this year.</p>
+<p class="has-line-data" data-line-start="4" data-line-end="5">One of the reasons for the unusual fire activity is because of low precipitation. According to the data from the National Centers for Environmental Information, California and the Northern Rockies had one of the driest springs in over a hundred years. This was exacerbated by record high temperatures in these regions at the end of June. Another contributing factor was the rise in lightning activity.</p>
+<p class="has-line-data" data-line-start="6" data-line-end="7">Towards the end of June, over half of the region in the West Coast was in extreme drought - becoming the most expansive and intense drought this century. This laid the foundation for the worst fires in the July to September season.</p>
+</p>
+    </div>
+       <div class="story-body">
+        <p class="body-text serif"><p class="has-line-data" data-line-start="0" data-line-end="1">The biggest among them was the Dixie Fire which burnt almost a million acres and caused <a href="https://www.sfchronicle.com/bayarea/article/Last-year-s-fire-season-in-California-set-17010110.php">estimated damage of 600 million dollars</a>. This is the single largest wildfire in California’s recorded history.</p>
+<p class="has-line-data" data-line-start="2" data-line-end="3">The second-largest fire Bootleg burnt 400,000 acres of land in Oregon and is estimated to cost over 100 million dollars. The River Complex, Caldor, and Monument fire <a href="https://www.predictiveservices.nifc.gov/intelligence/2021_statssumm/annual_report_2021.pdf">each burned between 200,000 and a quarter million acres in California</a>.</p>
+<p class="has-line-data" data-line-start="4" data-line-end="5">In 2021, the Northern California region saw a 167 percent increase in wildfire acres burned compared to the ten-year average. Even the Northern Rockies saw a 40 percent increase in areas burned due to wildfire in 2021.</p>
+<h3 class="code-line" data-line-start=6 data-line-end=7 ><a id="The_True_Cost_of_Wildfires_6"></a>The True Cost of Wildfires</h3>
+<p class="has-line-data" data-line-start="8" data-line-end="9">The economic cost of these wildfires rakes up to a few billion dollars. Just the top 10 fires in California in 2021 cost an estimated 2 billion dollars according to the internal estimate by the National Interagency Fire Center.</p>
+</p>
+    </div>
+
+    <div class="chart-section">
+        <div class="chart-row">
+          <div class="chart">
+
+
+<iframe title="The Top 10 significant fires caused 2 billion dollars worth of damage" aria-label="Bar Chart" id="datawrapper-chart-yNDSD" src="https://datawrapper.dwcdn.net/yNDSD/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="452"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+        </div>
+        </div>
+    </div>
+     <div class="story-body">
+        <p class="body-text serif"><p class="has-line-data" data-line-start="0" data-line-end="1">However, these are not complete estimates. They do not account for secondary costs such as public health costs, ecological damage, additional costs due to mobilizations (such as crew, water, helicopters, and other fire containment mobilizations). There also are tertiary costs - losses in sectors such as tourism and recreation.</p>
+<p class="has-line-data" data-line-start="2" data-line-end="3"><strong>Environmental Costs</strong></p>
+<p class="has-line-data" data-line-start="4" data-line-end="5">In terms of environmental impact, the emissions due to these fires cannot be understated. In between July to September, the fires in California released more than <a href="https://www.nytimes.com/2021/09/21/climate/wildfire-emissions-climate-change.html?">75 million metric tons of Carbon Dioxide</a>. These emissions might pale in comparison to the 33 billion tons of emissions released this year - but it is important to note that these fires also burn down vegetation and therefore reduce our efforts to offset emissions.</p>
+<p class="has-line-data" data-line-start="6" data-line-end="7"><strong>Public Health Costs</strong></p>
+<p class="has-line-data" data-line-start="8" data-line-end="9">Currently, there are no tracking mechanisms to find the number of deaths and health conditions linked to wildfire smoke exposure. We know that during wildfire incidents, the number of people visiting the emergency room for respiratory conditions goes up and these events have the potential to impact lung development in children. According to a <a href="https://journals.lww.com/ajnonline/Fulltext/2020/12000/Wildfires_A_Growing_Public_Health_Crisis.10.aspx">study</a>, even exposure to a single wildfire can have lasting health effects. Many residents find that their lungs never improved even one to two years after the initial exposure. These fires not only affect health of those living in the vicinity, but those who live hundreds of miles away.  The cost of this will be difficult to estimate without any metrics.</p>
+<p class="has-line-data" data-line-start="10" data-line-end="11"><strong>Tertiary Costs</strong></p>
+<p class="has-line-data" data-line-start="12" data-line-end="13">Fires also disrupt processes. During wildfire events, there are damages of other kinds - produce is destroyed, tourism is affected etc. The loss of economic activity is also a challenge to quantify. There needs to be a greater amount of research into identifying the impact of these losses.</p>
+</p>
+    </div>
+  </body>
+</html>
