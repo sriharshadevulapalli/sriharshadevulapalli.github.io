@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Stunted, Wasted and Underweight.</title>
+	<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="https://harshadevulapalli.github.io/stunted-wasted-underweight-future/indianstatestopojson.json" meta charset="UTF8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,600,900" rel="stylesheet">
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+    <style>
+    body {
+        font-family:  "Fira Sans Extra Condensed", sans-serif;
+    }
+    h1,h2,h3,h6{
+
+        text-align: center;
+    }
+    h1{
+        font-size: 2em;
+        font-weight: 900;
+    }
+    p,ul{
+        font-weight: 400;
+        font-size: 1.25em;
+    }
+
+    h3{
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    h4,h5,.label{
+        font-size: 0.8em;
+        font-weight: 400;
+        text-align:left;
+    }
+
+    .stateLabel{
+        font-size: 0.7em;
+        font-weight: 400;
+
+    }
+
+}
+
+h6{
+    color: #f49416;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+path.hover {
+    stroke-width: 1.25px;
+    opacity: 1;
+}
+
+path{
+    stroke-width: 0.75px;
+    opacity: 0.9;
+}
+
+button {
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    border: 0px;
+    background: transparent;
+    text-decoration: underline;
+}
+
+#centered {
+   width:500px; /* this is the width of the center column (px, em or %) */
+   text-align:left; /*resets the text alignment back to left */
+   margin:0 auto; /* auto centers the div in standards complaint browsers */
+}
+
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 40px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 3px solid #000000;
+  padding: 10px;
+  text-align: center;
+  font-family:  "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+</style>
+</head>
+<body>
+    <div id="centered">
+        <h1>Our Stunted, Wasted and Underweight Future.</h1>
+        <h6>by Harsha Devulapalli</h6>
+        <p>A large percentage of India's children are at risk of faltered growth, disease and impaired development. Data on height and weight from the recently released National Family Health Survey (NFHS) 2019-2021 reveals the poor nutritional status of young children in India. The three primary indices - height for age, weight for height and weight for age were calculated in the survey to measure Stunting, Wasting and Underweight percentage of children below the age of 5. <ul style="list-style-type:disc">
+            <li><b>Stunting</b> is defined as low height for age. Two out of every five children in India are stunted.</li>
+            <li> <b>Wasting </b> is low weight for height. One out of every five children is wasted.</li>
+            <li><b>Underweight</b> is not just defined as low weight for age but is also a measure of acute and chronic undernutrition. Two out of every five children in India are underweight. </li>
+        </ul>
+
+        <p>Bihar, Gujarat, Jharkhand, Maharashtra, and Assam have the highest rates of poorly nourished children among these indices.</p>
+
+        <p>Manipur, Sikkim, Punjab, Mizoram, and Kerala are among the better performing states, despite having miles to go.</p>
+
+        <p> To see how your state performs on these parameters, choose any of the buttons below. </p> </div>
+        <div id ="controls" align="center"></div>
+        <h3> Hover on a state to see how it fares. </h3>
+        <div id ="canvas" align="center"></div>
+        <div id="centered">
+            <h6>Source: National Family Health Survey 2019-2021 (NFHS-5), National Family Health Survey 2015-2016 (NFHS-4)</h6>
+            <p>Notes</p>
+            <h4><ul style="list-style-type:disc">
+                <li> Children whose index (height-for-age, weight for height, weight for age) is below minus two standard deviations (-2 SD) from the median of the reference population are considered stunted, wasted or underweight as per this definition.</li>
+                <li> Children whose indices were below minus three standard deviations (-3 SD) are considered severely stunted, wasted or undernourished. </li>
+                <li> For weighing very young children, the weight of the mother or caretaker was measured and they were weighed again holding the child. The deduction was counted as their weight.</li>
+                <li> Children younger than 24 months were measured lying down and standing height was used for older children</li>
+                <li> Data for all UTs except Delhi is from NFHS-4 as the latest round of data has not been released yet</li>
+            </h4>
+            </div>
+            <script>
+            var width = 600;
+            var height = 600;
+
+	// Create SVG
+	var svg = d3.select( "#canvas" )
+    .append( "svg" )
+    .attr( "width", width )
+    .attr( "height", height)
+    .attr("align", "center");
+
+    var geoProjection = d3.geoMercator()
+    .scale( 1000 )
+    .center( [83, 23] )
+    .translate( [width/2,height/2] );
+
+    var geoPath = d3.geoPath()
+    .projection(geoProjection);
+
+    d3.queue()
+    .defer(d3.json,"indianstatestopojson.json")
+    .defer(d3.csv,"stunting-wasting-underweight-nfhs.csv")
+    .await(ready);
+
+    var tooltip = d3.select("body").append("div").attr("class", "toolTip");
+
+
+    function ready(error,india,nutritionData) {
+        if (error) throw error;
+
+        var allStates= svg.append( "g" )
+        .attr("id","allStates")
+        .selectAll( "path" )
+        .data(topojson.feature(india, india.objects.polygons).features)
+        .enter()
+        .append( "path" )
+        .attr( "d", geoPath )
+        .attr("class","state")
+        .attr("id",function(d){
+            return (d.properties.state.replace(/ /g,"_"))
+        })
+        .style("fill","#f0f0f0")
+        .style( "stroke", "#fff")
+
+        var stateLabels = svg.append('g').attr('class', 'labels');
+
+        stateLabels.selectAll('.stateLabel').data(topojson.feature(india, india.objects.polygons).features).enter().append('text')
+        .attr("class", "stateLabel")
+        .attr('transform', function(d) {
+            return "translate(" + geoPath.centroid(d) + ")";
+        })
+        .style('text-anchor', 'middle')
+        .text(function(d) {
+            return d.properties.state_code
+        });
+
+        const dataKeys= Object.keys(nutritionData[0])
+        .filter(d => d =="Stunting Percentage Below -2SD" || d=="Wasting Percentage Below -2SD" || d=="Underweight Percentage Below -2SD")
+
+        d3.select('#controls')
+        .selectAll("path")
+        .data(dataKeys)
+        .enter()
+        .append("button")
+        .on("click", buttonClick)
+        .attr("id",d=> d)
+        .html(function(d){
+            if (d=="Stunting Percentage Below -2SD"){
+                return "Percentage of Stunted Children in India"
+            }
+            if (d=="Wasting Percentage Below -2SD"){
+                return "Percentage of Wasted Children in India"
+            }
+            if (d=="Underweight Percentage Below -2SD"){
+                return "Percentage of Underweight Children in India"
+            }
+        })
+
+
+        stuntingColors=["#fde8e8","#ea2e34","#a21015"]
+        wastingColors=["#fef2e7","#f7936b","#c46308"]
+        underweightColors=["#f5eff5","#b792b9","#5c3c5d"]
+
+
+        function buttonClick(datapoint)
+
+        { 
+            d3.selectAll("button").style("background", "transparent")
+
+            if(datapoint=="Stunting Percentage Below -2SD"){
+                var chosenColor=stuntingColors;
+                var backgroundColour=stuntingColors[1];
+                var displayText="stunted";
+            }
+            if(datapoint=="Wasting Percentage Below -2SD"){
+                var chosenColor=wastingColors;
+                var backgroundColour=wastingColors[2];
+                var displayText="wasted";
+            }
+            if(datapoint=="Underweight Percentage Below -2SD"){
+                var chosenColor=underweightColors;
+                var backgroundColour=underweightColors[2];
+                var displayText="underweight";
+            }
+            //Code for creating the choropleth
+            d3.select(this).style("background", backgroundColour)
+            var maxValue = d3.max(nutritionData, d => parseFloat(d[datapoint]))
+            var minValue = d3.min(nutritionData, d => parseFloat(d[datapoint]))
+            var colourScale=d3.scaleQuantile().domain([minValue, maxValue]).range(chosenColor);
+
+            var stateData = {}
+            nutritionData.forEach(function(d){
+                stateData[d.state] = d[datapoint]
+                var colourState = colourScale(d[datapoint]);
+                d3.select("#"+d.state.replace(/ /g,"_")).transition().duration(1000).style("fill", colourState);
+            })
+
+            // Legend for the choropleth
+            svg.append("g")
+            .attr("class","legendQuant")
+            .attr("transform","translate(400,20)");
+
+            var legend = d3.legendColor()
+            .labelFormat(d3.format(".2f"))
+            .title("Legend (in %)")
+            .scale(colourScale)
+
+            svg.select(".legendQuant")
+            .call(legend);
+
+            //tooltip
+            allStates.on("mouseover", function(d){
+                d3.select(this).classed("hover",true).style("stroke","black").raise();
+               // return tooltip.text(stateData[d.properties.state] +" percent of "+d.properties.state+'\'s children are '+ displayText+".").style("visibility", "visible");
+            })
+
+            allStates.on("mousemove", function(d){
+                tooltip
+                .style("left", d3.event.pageX - 50 + "px")
+                .style("top", d3.event.pageY - 70 + "px")
+                .style("display", "inline-block")
+                .html(d.properties.state+"<br>"+stateData[d.properties.state]+"%");
+            })
+
+            allStates.on("mouseout", function(d){
+                d3.select(this).classed("hover",false).style("stroke","white").lower();
+                tooltip.style("display", "none");
+                d3.select("h3").text(" Hover on a state to see how it fares. ");
+
+
+            })
+
+        }
+    }
+    </script>
+    </body>
+    </html>
