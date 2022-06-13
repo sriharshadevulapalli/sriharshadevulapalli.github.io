@@ -5,7 +5,7 @@ var map4 = new mapboxgl.Map({
     zoom: 10.5,
     maxZoom: 14,
     minZoom: 10.5,
-    center: [-73.948, 40.7447],
+    center: [-73.82000, 40.7447],
 });
 
 map4.on("load", function () {
@@ -40,7 +40,7 @@ map4.on("load", function () {
  
 
 map4.on("click", "citibikes4", function (e) {
-  var bikeStationName = e.features[0].properties['start station name'];
+  var bikeStationName = e.features[0].properties['end_station_name'];
   var bikeStationTripCount = e.features[0].properties['tripCount'];
   bikeStationName = bikeStationName.toLocaleString();
   new mapboxgl.Popup()
