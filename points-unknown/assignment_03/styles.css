@@ -14,7 +14,7 @@ div {
     box-sizing: border-box;
   }
 
-.container{
+/* .container{
     display: flex;
 }
 .fixed{
@@ -23,12 +23,12 @@ div {
 .flex-item{
     flex-grow: 1;
     padding:1em;
-}
+} */
 
 
 
 #map,#map2,#map3,#map4 {
-    width: auto;
+    width: 450px;
     height:600px;
 }
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Citi Bike Commuting Patterns</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://api.fontshare.com/css?f[]=supreme@100,101,200,201,300,301,400,401,500,501,700,701,800,801&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id = "container">
+        <h2>The World Justice Rule of Law : 2021 </h2>
+        <p> A quick analysis of how countries adherence to law has changed over the past six years</p>
+        <p>The Rule of Law is a major upholding principle for Democracies. In the last few years, it has been on the decline, shows data from the World Justice Project. These declines were strongest in the Middle East and North Africa, South Asia, and European Union regions. In 2021, several governments across the world used the coronavirus pandemic to curtail freedoms. Venezuela was the lowest ranked country on the index along with Cambodia and Egypt. Denmark, Norway, Finland, and Sweden were the highest ranked countries in the list. </p>
+        <p>This study conducted by the World Justice Project, an international civil society organization, surveyed over 38,000 households and 4,200 legal practitioners across 139 countries and measured this index based across eight factors : constraints on government powers, absence of corruption, open governance, adherence to fundamental rights, order and security, regulatory environment, access to civil justice, and criminal justice. 
+        </p><p>If one takes a look at how the country’s rankings have changed since 2015 (the first comparable year), there appear to be concerning trends. Countries were classified into six categories based on how things have changed since then : Massive Decline, Decline, Slight Decline, Steady, Slight Increase, and Increase. 
+        </p>      
+
+    <div id='map'>
+        <div id='title' class="title">
+            <h1>Decline in Justice</h1>
+            <p> Data from the World Justice Project Rule of Law 2021, 2015</p>
+                    <hr>
+            <div id="income-legend" class="legend">
+                <h4>Change in Adherence to Rule of Law from 2015</h4>
+                <div><span style="background-color: #FF0000"></span>Massive Decline</div>
+                <div><span style="background-color: #CE5757"></span>Decline</div>
+                <div><span style="background-color: #E0A5A6"></span>Slight Decline</div>
+                <div><span style="background-color: #F2F3F4"></span>Steady</div>
+                <div><span style="background-color: #A8D0F0"></span>Slight Increase</div>
+                <div><span style="background-color: #5DADEC"></span>Increase</div>
+                <div><span style="background-color: #808082"></span>No Data</div>
+            </div>
+        </div>
+        <script type='text/javascript' src="map.js"></script>
+    </div>
+    
+  
+    
+<p>Out of the 102 countries that had data since 2015, neary three-fifths of them (58) have seen a decline in the rule of law. Seven of these : Egypt, Poland, The Philippines, Cambodia, Belarus, Hungary, and Ghana have seen a rapid deterioration of the rule of law in the past six years. Even high income countries such as the United States, France, Korea, and Singapore have seen things worsen. 
+</p>
+<p>15 countries have managed to remain steady in this duration.Countries like New Zealand, Netherlands, Portugal, South Africa, Malaysia, Indonesia, and Nigeria have remained steady in their scores. 
+</p>
+<p>29 countries were able to make things better. Among the countries that have seen an increase in their rule of law scores include Denmark, Norway, Finland, Germany, Canada, Spain, Italy among others. 
+</p>
+
+</div>
+
+</body>
+
+</html>
