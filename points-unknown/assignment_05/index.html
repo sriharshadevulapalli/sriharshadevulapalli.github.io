@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>On the Edge</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://api.fontshare.com/css?f[]=supreme@100,101,200,201,300,301,400,401,500,501,700,701,800,801&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id = "container">
+        <h2> These California counties face the highest risk </h2>
+        <p class="body-text serif"><p class="has-line-data" data-line-start="0" data-line-end="1">2021 was yet another bad fire year for the United States. There were nearly <a href="https://www.predictiveservices.nifc.gov/intelligence/2021_statssumm/annual_report_2021.pdf">60,000 fires in the year ravaging over 7 million acres of land</a>. These numbers, despite their large magnitude, are an unfortunate reality of climate change.</p>
+        <p class="has-line-data" data-line-start="2" data-line-end="3">Since the late 1990s, there has been a transition in how wildfires operate. Authorities are noticing a newer trend - the fires are getting out of control. It is becoming increasingly harder to contain them. While the number of fires has remained steady, they are going on for longer and are more intensive than ever. Lately, wildfires are burning twice the area than in the 1980s and 1990s. Some fires have gotten so bad that <a href="https://www.nytimes.com/2021/07/19/climate/bootleg-wildfire-weather.html#:~:text=Fires%20so%20extreme%20that%20they,heat%2C%20smoke%20and%20high%20wind.">they create their own weather systems</a>!</p>
+        <p class="has-line-data" data-line-start="4" data-line-end="5">Ongoing <a href="https://www.carbonbrief.org/factcheck-how-global-warming-has-increased-us-wildfires">changes in temperature, drought, and snowmelt</a> have contributed to the warmer, drier conditions that make these fires difficult to fight.</p>
+        <p class="has-line-data" data-line-start="6" data-line-end="7">While the wildfire numbers for 2021 are in line with the 10-year averages, the western region of the United States saw an unusually active year. California and Oregon were some of the worst affected regions.</p></p>
+        <p class="has-line-data" data-line-start="7" data-line-end="8"> Among the counties in California, it appears that the ones along the edges of the state are at the highest risk. On average, homes in Trinity, Mariposa, and Sierra Counties in Northern and Central California had the highest likelihood of being exposed to wildfires.
+       </p>
+       <p class="has-line-data" data-line-start="8" data-line-end="9"> In scientific terms, this is called burn probability. It is an assessment of the likelihood of a wildfire of any intensity occuring. It helps inform wildfire assesment plans. Higher the burn probability score, larger the fires usually are. 
+    </p>
+       
+       
+
+    <div id='map'>
+        <div id='title' class="title">
+            <h1>On the Edge</h1>
+                <p>US Department of Agriculture</p>
+                    <hr>
+            <div id="income-legend" class="legend">
+                <h4>Mean Annual Burn Probability</h4>
+                <div><span style="background-color: #ffffcc"></span>Lowest 20%</div>
+                <div><span style="background-color: #fed976"></span>Lower (20-40%)</div>
+                <div><span style="background-color: #fd8d3c"></span>Middle (40-60%)</div>
+                <div><span style="background-color: #e31a1c"></span>High (80-80%)</div>
+                <div><span style="background-color: #800026"></span>Highest 20%</div>
+            </div>
+        </div>
+        <script type='text/javascript' src="map.js"></script>
+    </div>
+    <p class="has-line-data" data-line-start="9" data-line-end="10"> The counties are classified into five categories where each category represents equal interval steps of 20 percent of the analysis maximum burn probability. 
+    </p>
+
+    <p class="has-line-data" data-line-start="10" data-line-end="11"> The counties of San Francisco, Imperial, and San Mateo have the lowest likelihoods of fire. 
+    </p>
+  
+</div>
+
+</body>
+
+</html>
