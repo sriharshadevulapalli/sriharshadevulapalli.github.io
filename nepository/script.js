@@ -31,6 +31,10 @@ function addTooltip(circle) {
         tooltip.attr("dx", 0);
     }
 }
+
+
+
+
 var w = 1360,
     h = 800,
     toggle = 0;
@@ -62,6 +66,16 @@ svg.append('rect')
 // };
 
 
+window.addEventListener('resize', resize); 
+
+function resize() {
+    var width = window.innerWidth, height = window.innerHeight;
+    svg.attr("width", width).attr("height", height);
+    layout.size([width, height]).resume();
+}
+
+
+
     // draw plot background
     svg.append("rect")
         .attr("width", width)
@@ -70,35 +84,17 @@ svg.append('rect')
     // create an area within svg for plotting graph
 
 
-    var lg = svg.append("defs").append("linearGradient")
-        .attr("id", "mygrad")
-        .attr("x1", "0%")
-        .attr("x2", "0%")
-        .attr("y1", "0%")
-        .attr("y2", "100%")
-        ;
-        lg.append("stop")
-        .attr("offset", "0%")
-        .style("stop-color", "red")
-        .style("stop-opacity", 1)
-
-        lg.append("stop")
-        .attr("offset", "100%")
-        .style("stop-color", "blue")
-        .style("stop-opacity", 1)
-
 
     var plot = svg.append("g")
         .attr("id", "plot")
         .attr("transform", "translate(" + pad + ", " + pad + ")");
     // https://github.com/mbostock/d3/wiki/Force-Layout#wiki-force
     var layout = d3.layout.force()
-        .size([width - margin, height - margin])
-        .charge(-500)
-        .chargeDistance(125)
-        .theta(0.75)
+        .size([width - margin/6, height - margin/6])
+        .charge(-300)
+        .chargeDistance(76)
         .linkDistance(function(d, i) {
-            return (d.source.group == d.target.group) ? 25 : 50;
+            return (d.source.group == d.target.group) ? 10 : 10;
         })
         .nodes(graph.nodes)
         .links(graph.links)
@@ -121,21 +117,22 @@ svg.append('rect')
             .attr("cy", function(d) { return d.y = Math.max(0,Math.min(height, d.y)); });
     });
 
+
 /*uncomment below for fisheye*/
-// var fisheye = d3.fisheye.circular()
-//       .radius(10);
-// svg.on("mousemove", function() {
-//       layout.stop();
-//       fisheye.focus(d3.mouse(this));
-//       d3.selectAll("circle").each(function(d) { d.fisheye = fisheye(d); })
-//           .attr("cx", function(d) { return d.fisheye.x; })
-//           .attr("cy", function(d) { return d.fisheye.y; })
-//           .attr("r", function(d) { return d.fisheye.z * 3; });
-//       d3.selectAll(".link").attr("x1", function(d) { return d.source.fisheye.x; })
-//           .attr("y1", function(d) { return d.source.fisheye.y; })
-//           .attr("x2", function(d) { return d.target.fisheye.x; })
-//           .attr("y2", function(d) { return d.target.fisheye.y; });
-//     });
+var fisheye = d3.fisheye.circular()
+      .radius(100);
+svg.on("mousemove", function() {
+      layout.stop();
+      fisheye.focus(d3.mouse(this));
+      d3.selectAll("circle").each(function(d) { d.fisheye = fisheye(d); })
+          .attr("cx", function(d) { return d.fisheye.x; })
+          .attr("cy", function(d) { return d.fisheye.y; })
+          .attr("r", function(d) { return d.fisheye.z * 2; });
+      d3.selectAll(".link").attr("x1", function(d) { return d.source.fisheye.x; })
+          .attr("y1", function(d) { return d.source.fisheye.y; })
+          .attr("x2", function(d) { return d.target.fisheye.x; })
+          .attr("y2", function(d) { return d.target.fisheye.y; });
+    });
 
 
 var linkedByIndex = {};
@@ -245,7 +242,7 @@ function drawNodes(nodes) {
         .attr("cy", function(d, i) { return d.y; })
         .attr("r",  function(d, i) { return 2; })
         .style("fill",   function(d, i) { return color(d.group); })
-        .on("mouseover", function(d, i) { addTooltip(d3.select(this)); console.log(d3.select(this))})
+        .on("mouseover", function(d, i) { addTooltip(d3.select(this)); })
         .on("mouseout",  function(d, i) { d3.select("#tooltip").remove(); });
 }
 // Draws edges between nodes
