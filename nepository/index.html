@@ -1,0 +1,49 @@
+<!-- python -m SimpleHTTPServer 8080 //-->
+<!-- http://bl.ocks.org/mbostock/4062045 //-->
+
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Bollywood Film Families</title>
+
+<!-- JavaScript Libraries //-->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3-zoom.v1.min.js"></script>
+<script type='text/javascript' src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"> </script>
+<script type='text/javascript' src="jQuery/jquery.min.js"> </script>
+<script type='text/javascript' src="jQuery/jquery-ui.min.js"> </script>
+<!-- CSS Style //-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href=style.css rel="stylesheet">
+
+<script type='text/css' src="jQuery/jquery-ui.css"> </script>
+<script src="script.js"> </script>
+
+</head>
+
+<body>
+
+<h1>It's all in the family</h1>
+<h3> Let us look at how closely Bollywood's film families are related. </h3>
+<p> By Sriharsha Devulapalli</p> 
+<div id = "story">
+    <p> Bollywood is often accused of being a nepotistic industry. Several leading actors in the current generation have had a leg up thanks to their parents or grand parents. We're not talking about the Kapoors or the Khans. Many other actors often have a connection or two that you might not know. </p>
+    <p> For example, did you know Kajol's great grand mother was an actress? or that the Kapoors and Bacchans are related? Use the explorer to see how Bollywood's famous film families are related to each other.</p>
+</div>
+    <div class="ui-widget">
+       <input id="search">
+        <button type="button" onclick="searchNode()">Search</button>
+    </div>
+    
+    <div id="force"></div>
+    
+
+
+
+<script>
+d3.json("RelationshipJan12.json", drawGraph);
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: 'Karma', serif;
+    font-weight: 300;
+    align-content: center;
+    background-color: #262a3b;
+    text-align: center;
+    color: whitesmoke;
+}
+
+button {
+    font-family: 'Karma', sans-serif;
+    font-weight: 400;
+    background-color: #262a3b;
+    color: whitesmoke;
+
+}
+
+div#story{
+    margin-left: 25rem;
+    margin-right: 25rem;
+    text-justify:distribute-all-lines;
+}
+
+.ui-widget{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+b {
+    font-weight: 900;
+}
+
+.force{
+
+align-content: center;
+
+}
+
+.outline {
+    fill: none;
+    stroke: #888888;
+    stroke-width: 1px;
+}
+
+#tooltip {
+    font-size: 10pt;
+    font-weight: 600;
+
+    fill: #ffffff;
+    /* stroke: #ffffff; */
+    /* stroke-width: 0.25px; */
+}
+
+.node {
+    stroke: #ffffff;
+    stroke-weight: 1px;
+}
+
+.link {
+    fill: none;
+    stroke: #888888;
+    stroke-opacity: 0.75;
+}
+
+.highlight {
+    stroke: red;
+    stroke-weight: 4px;
+    stroke-opacity: 1.0;
+}
+.svg{
+fill: "#262a3b";
+}

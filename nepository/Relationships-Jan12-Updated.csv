@@ -1,0 +1,555 @@
+Person,Family,Industry,Role,Relationship,Person 2
+Jan Nisar Akhtar,Akhtar-Azmi-Kher,Hindi,Poet and Lyricist,,
+Javed Akhtar,Akhtar-Azmi-Kher,Hindi,"Playwright, Poet and Lyricist",Son,Jan Nisar Akhtar
+Honey Irani,Akhtar-Azmi-Kher,Hindi,Actor and Screen Writer,Ex-Wife,Javed Akhtar
+Daisy Irani,Akhtar-Azmi-Kher,Hindi,Actor,Sister,Honey Irani
+Farhan Akhtar,Akhtar-Azmi-Kher,Hindi,Actor and Director,Son,Javed Akhtar
+Farhan Akhtar,Akhtar-Azmi-Kher,Hindi,Actor and Director,Son,Honey Irani
+Adhuna Akhtar,Akhtar-Azmi-Kher,Hindi,Hairstylist and TV Host,Ex-Wife,Farhan Akhtar
+Zoya Akhtar,Akhtar-Azmi-Kher,Hindi,Director,Sister,Javed Akhtar
+Zoya Akhtar,Akhtar-Azmi-Kher,Hindi,Director,Sister,Honey Irani
+Farah Khan,Akhtar-Azmi-Kher,Hindi,Choreographer and Director,Niece,Honey Irani
+Shirish Kunder,Akhtar-Azmi-Kher,Hindi,Editor,Husband,Farah Khan
+Sajid Khan,Akhtar-Azmi-Kher,Hindi,Actor and Director,Brother,Farah Khan
+Kaifi Azmi,Akhtar-Azmi-Kher,Hindi,Poet and Lyricist,,
+Shaukat Kaifi,Akhtar-Azmi-Kher,Hindi,Actor,Wife,Kaifi Azmi
+Baba Azmi,Akhtar-Azmi-Kher,Hindi,Cinematographer,Son,Kaifi Azmi
+Shabana Azmi,Akhtar-Azmi-Kher,Hindi,Actor,Daughter,Kaifi Azmi
+Shabana Azmi,Akhtar-Azmi-Kher,Hindi,Actor,Daughter,Shaukat Kaifi
+Tanvi Azmi,Akhtar-Azmi-Kher,Hindi,Actor,Wife,Baba Azmi
+Usha Kiran,Akhtar-Azmi-Kher,Hindi,Actor,,
+Uttara Mhatre Kher,Akhtar-Azmi-Kher,Hindi,Model,Daughter-in-law,Usha Kiran
+Saiyami Kher,Akhtar-Azmi-Kher,Hindi,Actor,Daughter,Uttara Mhatre Kher
+Kabir Akhtar,Akhtar-Azmi-Kher,Hindi,Director,Nephew,Javed Akhtar
+Farah,Akhtar-Azmi-Kher,Hindi,Actor,Niece,Shabana Azmi
+Tabu,Akhtar-Azmi-Kher,Hindi,Actor,Niece,Shabana Azmi
+Mumtaz Ali,Ali-Amrohi,Hindi,Actor,,
+Mehmood,Ali-Amrohi,Hindi,Actor,Son,Mumtaz Ali
+Tracy Ali,Ali-Amrohi,Hindi,Actor,Wife,Mehmood
+Minoo Mumtaz,Ali-Amrohi,Hindi,Actor,Daughter,Mumtaz
+Anwar Ali,Ali-Amrohi,Hindi,Actor,Brother,Mehmood
+Lucky Ali,Ali-Amrohi,Hindi,Singer,Son,Mehmood
+Pucky Ali,Ali-Amrohi,Hindi,Actor,Son,Mehmood
+Macky Ali,Ali-Amrohi,Hindi,Actor,Son,Mehmood
+Masoom Ali,Ali-Amrohi,Hindi,Actor and Producer,Son,Mehmood
+Mansoor Ali,Ali-Amrohi,Hindi,Actor,Son,Mehmood
+Manzoor Ali,Ali-Amrohi,Hindi,Actor,Son,Mehmood
+Ginny Ali,Ali-Amrohi,Hindi,Actor,Daughter,Mehmood
+Khursheed Bano,Ali-Amrohi,Hindi,Actor,Sister,Meena Kumari
+Meena Kumari,Ali-Amrohi,Hindi,Actor,Ex-Sister-in-law,Mehmood
+Kamal Amrohi,Ali-Amrohi,Hindi,Director,Husband,Meena Kumari
+Tajdar Amrohi,Ali-Amrohi,Hindi,Director,Son,Kamal Amrohi
+Bilal Amrohi,Ali-Amrohi,Hindi,Actor,Grand Son,Kamal Amrohi
+Mashhoor Amrohi,Ali-Amrohi,Hindi,Actor,Grand Son,Kamal Amrohi
+Mazhar Khan,Ali-Amrohi,Hindi,Actor,Uncle,Bilal Amrohi
+Zeenat Aman,Ali-Amrohi,Hindi,Actor,Wife,Mazhar Khan
+Dev Anand,Anand-Sahni,Hindi,Actor,,
+Kalpana Kartik,Anand-Sahni,Hindi,Actor,Wife,Dev Anand
+Suneil Anand,Anand-Sahni,Hindi,Actor,Son,Dev Anand
+Chetan Anand,Anand-Sahni,Hindi,Director and Screen Writer,Brother,Dev Anand
+Uma Anand,Anand-Sahni,Hindi,Actor,Ex-Wife,Chetan Anand
+Ketan Anand,Anand-Sahni,Hindi,Director,Son,Chetan Anand
+Priya Rajvansh,Anand-Sahni,Hindi,Actor,Partner,Chetan Anand
+Kamal Jeet,Anand-Sahni,Hindi,Actor,Brother,Priya Rajvansh
+Waheeda Rehman,Anand-Sahni,Hindi,Actor,Wife,Kamal Jeet
+Vijay Anand,Anand-Sahni,Hindi,"Producer, Screen Writer, Actor and Director",Brother,Dev Anand
+Shekhar Kapur,Anand-Sahni,Hindi,"Actor, Director and Producer",Nephew,"Dev Anand, son"
+Suchitra Krishnamurthy,Anand-Sahni,Hindi,Actor,Ex-Wife,Shekhar Kapur
+Navin Nischol,Anand-Sahni,Hindi,Actor,Ex-Brother-in-law,Shekhar Kapur
+Balraj Sahni,Anand-Sahni,Hindi,Actor,,
+Bhisham Sahni,Anand-Sahni,Hindi,"Actor, Novelist and Playwright",Brother,Balraj Sahni
+Parikshit Sahni,Anand-Sahni,Hindi,Actor,Son,Balraj Sahni and brother
+Vishal Anand,Anand-Sahni,Hindi,Actor,Nephew,Dev Anand
+Purab Kohli,Anand-Sahni,Hindi,Actor,Nephew,Shekhar Kapur
+Shivajirao Girdhar Patil,Babbar,Hindi,Politician,,
+Syed Sajjad Zaheer,Babbar,Hindi,Writer,Father,Nadira Babbar
+Raj Babbar,Babbar,Hindi,,,
+Nadira Babbar,Babbar,Hindi,Actor,Ex-Wife,Raj Babbar
+Arya Babbar,Babbar,Hindi,Actor,Son,Raj Babbar
+Juhi Babbar,Babbar,Hindi,Actor,Daughter,Raj Babbar
+Anup Soni,Babbar,Hindi,Actor,Husband,Juhi Babbar
+Smita Patil,Babbar,Hindi,Actor,Ex-Wife,Raj Babbar
+Prateek Babbar,Babbar,Hindi,Actor,Son,Smita Patil
+Harivansh Rai Bachchan,Bachchan,Hindi,Poet,Father,Amitabh Bachchan
+Amitabh Bachchan,Bachchan,Hindi,Actor,Son,Harivansh Rai Bachchan
+Jaya Bachchan,Bachchan,Hindi,Actor,Wife,Amitabh Bachchan
+Abhishek Bachchan,Bachchan,Hindi,Actor,Son,Amitabh Bachchan
+Aishwarya Rai Bachchan,Bachchan,Hindi,Actor,Wife,Abhishek Bachchan
+Nikhil Nanda,Bachchan,Hindi,Business Person,Son-in-law,Abhishek Bachchan
+Ritu Kapoor-Nanda,Bachchan,Hindi,Business Person,Mother,Nikhil Nanda
+Ajitabh Bachchan,Bachchan,Hindi,Actor and Producer,Brother,Amitabh Bachchan
+Kunal Kapoor,Bachchan,Hindi,Actor,Son-in-law,Ajitabh Bachchan
+Tarachand Barjatya,Barjatya,Hindi,Producer,,
+Kavita K. Barjatya,Barjatya,Hindi,Producer,Grand Daughter,Tarachand Barjatya
+Sooraj R. Barjatya,Barjatya,Hindi,"Director, Producer and Screen Writer",Grand Son,Tarachand Barjatya
+Harry Baweja,Baweja,Hindi,Director and Producer,,
+Pammi Baweja,Baweja,Hindi,Producer,Wife,Harry Baweja
+Harman Baweja,Baweja,Hindi,Actor,Son,Harry Baweja
+Kabir Bedi,Kabir Bedi,Hindi,Actor,,
+Protima Bedi,Kabir Bedi,Hindi,Dancer,Wife,Kabir
+Pooja Bedi,Kabir Bedi,Hindi,Actor,Daughter,Kabir
+Bishan Singh Bedi,Bishan Bedi,Hindi,Cricketer,,
+Angad Bedi,Bishan Bedi,Hindi,Model,Son,Bishan Singh Bedi
+Nanabhai Bhatt,Bhatt,Hindi,Director,,
+Dhaval Bhatt,Bhatt,Hindi,Editor,Son,Nanabhai Bhatt
+Robin Bhatt,Bhatt,Hindi,Screen Writer,Son,Nanabhai Bhatt
+Mukesh Bhatt,Bhatt,Hindi,Producer,Son,Mahesh Bhatt
+Vishesh Bhatt,Bhatt,Hindi,Director,Son,Mukesh Bhatt
+Mahesh Bhatt,Bhatt,Hindi,Director and Screen Writer,Son,Nanabhai Bhatt
+Pooja Bhatt,Bhatt,Hindi,Actor and Producer,Daughter,Mahesh Bhatt
+Rahul Bhatt,Bhatt,Hindi,Actor,Son,Mahesh Bhatt
+Soni Razdan,Bhatt,Hindi,Actor,Wife,Mahesh Bhatt
+Alia Bhatt,Bhatt,Hindi,Actor,Daughter,Mahesh Bhatt
+Shaheen Bhatt,Bhatt,Hindi,Assistant Director,Daughter,Mahesh Bhatt
+Karan Razdan,Bhatt,Hindi,Actor,Brother,Soni Razdan
+Vijay Tendulkar,Bhatt,Hindi,Theatre Artist,Father,Priya Tendulkar
+Priya Tendulkar,Bhatt,Hindi,Actor,Wife,Karan Razdan
+Mohit Suri,Bhatt,Hindi,Director,Nephew,Mahesh Bhatt
+Udita Goswami,Bhatt,Hindi,Actor,Wife,Mohit Suri
+Smiley Suri,Bhatt,Hindi,Actor,Sister,Mohit Suri
+Vineet Bangera,Bhatt,Hindi,Dancer,Husband,Smiley Suri
+Emraan Hashmi,Bhatt,Hindi,Actor,Nephew,Mahesh Bhatt
+Onjolee Nair,Bhatt,Hindi,Director,Niece,Mahesh Bhatt
+Milan Luthria,Bhatt,Hindi,Director,Nephew,Mahesh Bhatt
+Dharmesh Darshan,Bhatt,Hindi,Director and Producer,Nephew,Mahesh Bhatt
+Suneel Darshan,Bhatt,Hindi,Director and Producer,Nephew,Mahesh Bhatt
+Vijay Bhatt,Vijay Bhatt,Hindi,"Producer, Director and Screen Writer",,
+Pravin Bhatt,Vijay Bhatt,Hindi,Cinematographer and Director,Son,Vijay Bhatt
+Vikram Bhatt,Vijay Bhatt,Hindi,Director and Producer,Son,Pravin Bhatt
+Arun Bhatt,Vijay Bhatt,Hindi,Director,Son,Vijay Bhatt
+Chirantan Bhatt,Vijay Bhatt,Hindi,Singer,Son,Arun Bhatt
+Harsukh Jagneshwar Bhatt,Vijay Bhatt,Hindi,Producer and Director,Brother,Vijay Bhatt
+Pashupati Bhattacharjee,Bhattacharya,Hindi,Vocalist,,
+Kumar Sanu,Bhattacharya,Hindi,"Playback Singer, Producer and Music Director",Son,Pashupati Bhattacharya
+Shree Ram Bohra,Bohra,Hindi,Producer,Brother,Ramkumar Bohra
+Sunil Bohra,Bohra,Hindi,Producer,Grand Son,Ramkumar Bohra
+Ramkumar Bohra,Bohra,Hindi,"Producer, Director",Brother,Shree Ram Bohra
+Mahendra Bohra,Bohra,Hindi,"Producer, Director",Son,Ramkumar Bohra
+Karanvir Bohra,Bohra,Hindi,Actor and Producer,Son,Mahendra Bohra
+Teejay Sidhu,Bohra,Hindi,Actor and VJ,Wife,Karanvir Bohra
+Mithun Chakraborty,Chakraborty,Hindi,Actor,,
+Yogeeta Bali,Chakraborty,Hindi,Actor and Producer,Wife,Mithun Chakraborty
+Yogeeta Bali,Chakraborty,Hindi,Actor and Producer,Niece,Geeta Bali
+Mahaakshay Chakraborty,Chakraborty,Hindi,Actor,Son,Mithun Chakraborty
+Priyanka Chopra,Priyanka Chopra,Hindi,Actor,,
+Meera Chopra,Priyanka Chopra,Hindi,Model,Cousin,Priyanka Chopra
+Parineeti Chopra,Priyanka Chopra,Hindi,Actor,Cousin,Priyanka Chopra
+Mannara Chopra,Priyanka Chopra,Hindi,Model,Cousin,Priyanka Chopra
+Baldev Raj Chopra,Chopra-Johar,Hindi,Director and Producer,,
+Dharam Raj Chopra,Chopra-Johar,Hindi,Cinematographer,Brother,Baldev Raj Chopra
+Raj Chopra,Chopra-Johar,Hindi,Distributor,Brother,Baldev Raj Chopra
+Yash Chopra,Chopra-Johar,Hindi,"Director, Producer and Screen Writer",Brother,Baldev Raj Chopra
+Pamela Chopra,Chopra-Johar,Hindi,"Playback Singer, Producer and Music Director",Wife,Yash Chopra
+Ravi Chopra,Chopra-Johar,Hindi,Director,Son,Baldev Raj Chopra
+Simi Garewal,Chopra-Johar,Hindi,Actor,Niece,Pamela Chopra
+Aditya Chopra,Chopra-Johar,Hindi,"Director, Producer and Screen Writer",Son,Yash Chopra
+Uday Chopra,Chopra-Johar,Hindi,Actor and Producer,Brother,Aditya Chopra
+Abhay Chopra,Chopra-Johar,Hindi,Director,Son,Ravi Chopra
+Hiroo Johar,Chopra-Johar,Hindi,,Sister,Yash Chopra
+Yash Johar,Chopra-Johar,Hindi,Producer,Husband,Hiroo Johar
+Karan Johar,Chopra-Johar,Hindi,"Director, Producer and Screen Writer",Son,Yash Johar
+Dharmendra,Deol,Hindi,Actor,,
+Sunny Deol,Deol,Hindi,Actor,Son,Dharmendra
+Karan Deol,Deol,Hindi,Actor,Son,Sunny Deol
+Bobby Deol,Deol,Hindi,Actor,Son,Dharmendra
+Abhay Deol,Deol,Hindi,Actor,Nephew,Dharmendra
+Hema Malini,Deol,Hindi,Actor and Producer,Wife,Dharmendra
+Esha Deol,Deol,Hindi,Actor,Daughter,Dharmendra
+Madhoo,Deol,Hindi,Actor,Niece,Hema Malini
+Veeru Devgan,Devgan,Hindi,Producer,Father,Ajay Devgn
+Ajay Devgn,Devgan,Hindi,"Actor, Director and Producer",Son,Veeru Devgan
+Kajol,Devgan,Hindi,Actor,Wife,Ajay Devgn
+Anil Devgan,Devgan,Hindi,Director,Son,Veeru Devgan
+Vilasrao Deshmukh,Deshmukh,Hindi,Politician,,
+Amit Deshmukh,Deshmukh,Hindi,Politician,Son,Vilasrao Deshmukh
+Riteish Deshmukh,Deshmukh,Hindi,Actor and Producer,Son,Vilasrao Deshmukh
+Genelia Deshmukh,Deshmukh,Hindi,Actor,Wife,Riteish Deshmukh
+David Dhawan,Dhawan,Hindi,Director and Producer,,
+Varun Dhawan,Dhawan,Hindi,Actor,Son,David Dhawan
+Rohit Dhawan,Dhawan,Hindi,Director,Son,David Dhawan
+Anil Dhawan,Dhawan,Hindi,Actor,Brother,David Dhawan
+Siddharth Dhawan,Dhawan,Hindi,Actor,Son,Anil Dhawan
+Guru Dutt,Guru Dutt,Hindi,Actor,,
+Geeta Dutt,Guru Dutt,Hindi,Singer,Wife,Guru Dutt
+Shyam Benegal,Guru Dutt,Hindi,Director,Cousin,Guru Dutt
+Lalita Lajmi,Guru Dutt,Hindi,Painter,Sister,Guru Dutt
+Kalpana Lajmi,Guru Dutt,Hindi,Director,Niece,Guru Dutt
+Amrita Rao,Guru Dutt,Hindi,Actor,Grand Daughter,Guru Dutt
+Preetika Rao,Guru Dutt,Hindi,Actor,Sister,Amrita Rao
+Jaddanbai,Sunil Dutt,,Singer,Mother,Nargis
+Anwar Hussain,Sunil Dutt,Hindi,Actor,Son,Jaddanbai
+Akhtar Hussain,Sunil Dutt,Hindi,,Son,Jaddanbai
+Zahida Hussain,Sunil Dutt,Hindi,Actor,Daughter,Akhtar Hussain
+Nilesh Sahay,Sunil Dutt,Hindi,Actor,Son,Zahida Hussain
+Nargis,Sunil Dutt,Hindi,Actor,Daughter,Jaddanbai
+Sunil Dutt,Sunil Dutt,Hindi,Actor,Husband,Nargis
+Priya Dutt,Sunil Dutt,Hindi,Politician,Daughter,Sunil Dutt
+Sanjay Dutt,Sunil Dutt,Hindi,Actor,Son,Sunil Dutt
+Richa Sharma,Sunil Dutt,Hindi,Actor,Ex-Wife,Sanjay Dutt
+Rhea Pillai,Sunil Dutt,Hindi,Model,Ex-Wife,Sanjay Dutt
+Manyata Dutt,Sunil Dutt,Hindi,Producer,Wife,Sanjay Dutt
+Nimai Bali,Sunil Dutt,Hindi,Actor,Nephew,Sunil Dutt
+Sahila Chadha,Sunil Dutt,Hindi,Actor,Wife,Nimai Bali
+Rajendra Kumar,Sunil Dutt,Hindi,Actor,Father,Kumar Gaurav
+Kumar Gaurav,Sunil Dutt,Hindi,Actor,Son,Rajendra Kumar
+Bilal Amrohi,Sunil Dutt,Hindi,Actor,Son-in-law,Kumar Gaurav
+Ashok Kumar,Ganguly,Hindi,,,
+Preeti Ganguly,Ganguly,Hindi,Actor,Daughter,Ashok Kumar
+Deven Verma,Ganguly,Hindi,Actor,Son-in-law,Ashok Kumar
+Bharathi Jaffrey,Ganguly,Hindi,Actor,Daughter,Ashok Kumar
+Anuradha Patel,Ganguly,Hindi,Actor,Grand Daughter,Ashok Kumar
+Kanwaljit Singh,Ganguly,Hindi,Actor,Husband,Anuradha Patel
+Kiara Advani,Ganguly,Hindi,Actor,Grand Daughter,Bharathi Jaffrey
+Anoop Kumar,Ganguly,Hindi,Actor,Brother,Ashok Kumar
+Kishore Kumar,Ganguly,Hindi,Actor and Singer,Brother,Ashok Kumar
+Ruma Guha Thakurta,Ganguly,Hindi,Actor,Ex-Wife,Kishore Kumar
+Amit Kumar,Ganguly,Hindi,"Actor, Director and Playback Singer",Son,Kishore Kumar
+Madhubala,Ganguly,Hindi,Actor,Ex-Wife,Kishore Kumar
+Yogeeta Bali,Ganguly,Hindi,Actor,Ex-Wife,Kishore Kumar
+Leena Chandavarkar,Ganguly,Hindi,Actor,Ex-Wife,Kishore Kumar
+Arun Kumar Ahuja,Govinda,Hindi,Actor and Producer,Father,Govinda
+Nirmala Devi,Govinda,Hindi,Actor,Mother,Govinda
+Govinda,Govinda,Hindi,Actor,Son,Arun Kumar Ahuja
+Tina Ahuja,Govinda,Hindi,Actor,Daughter,Govinda
+Krushna Abhishek,Govinda,Hindi,Actor,Nephew,Govinda
+Kashmira Shah,Govinda,Hindi,Actor,Wife,Krushna Abhishek
+Aarti Singh,Govinda,Hindi,Actor,Sister,Krushna Abhishek
+Ragini Khanna,Govinda,Hindi,Actor,Niece,Govinda
+Soumya Seth,Govinda,Hindi,Actor,Cousin,Krushna Abhishek
+Vinay Anand,Govinda,Hindi,Actor,Nephew,Govinda
+Aryan,Govinda,Hindi,Actor,Nephew,Govinda
+Arjun Singh,Govinda,Hindi,Actor,Nephew,Govinda
+Amit Khanna,Govinda,Hindi,Actor,Nephew,Govinda
+Gulzar,Gulzar,Hindi,"Director, Lyricist and Poet",,
+Raakhee Gulzar,Gulzar,Hindi,Actor,Wife,Gulzar
+Meghna Gulzar,Gulzar,Hindi,Director,Daughter,Gulzar
+Jeetendra,Jeetendra Kapoor,Hindi,Actor,,
+Shobha Kapoor,Jeetendra Kapoor,Hindi,Producer,Wife,Jeetendra
+Tusshar Kapoor,Jeetendra Kapoor,Hindi,Actor,Son,Jeetendra
+Ekta Kapoor,Jeetendra Kapoor,Hindi,Producer,Daughter,Jeetendra
+Nitin Kapoor,Jeetendra Kapoor,Hindi,Producer,Cousin,Jeetendra
+Jayasudha,Jeetendra Kapoor,Telugu,Actor and Politician,Wife,Nitin Kapoor
+Prithviraj Kapoor,Prithviraj Kapoor,Hindi,Actor,,
+Raj Kapoor,Prithviraj Kapoor,Hindi,"Actor, Director and Producer",Son,Prithviraj Kapoor
+Randhir Kapoor,Prithviraj Kapoor,Hindi,"Actor, Director and Producer",Son,Raj Kapoor
+Babita,Prithviraj Kapoor,Hindi,Actor,Wife,Randhir Kapoor
+Karisma Kapoor,Prithviraj Kapoor,Hindi,Actor,Daughter,Randhir Kapoor
+Kareena Kapoor,Prithviraj Kapoor,Hindi,Actor,Daughter,Randhir Kapoor
+Saif Ali Khan,Prithviraj Kapoor,Hindi,Actor,Husband,Kareena Kapoor
+Rishi Kapoor,Prithviraj Kapoor,Hindi,"Actor, Director and Producer",Son,Raj Kapoor
+Neetu Singh,Prithviraj Kapoor,Hindi,Actor,Wife,Rishi Kapoor
+Ranbir Kapoor,Prithviraj Kapoor,Hindi,Actor,Son,Rishi Kapoor
+Rajiv Kapoor,Prithviraj Kapoor,Hindi,"Actor, Director and Producer",Son,Raj Kapoor
+Shammi Kapoor,Prithviraj Kapoor,Hindi,"Actor, Director and Producer",Son,Prithviraj Kapoor
+Geeta Bali,Prithviraj Kapoor,Hindi,Actor,Ex-Wife,Shammi Kapoor
+Aditya Raj Kapoor,Prithviraj Kapoor,Hindi,Actor and Producer,Son,Shammi Kapoor
+Kanchan Desai,Prithviraj Kapoor,Hindi,Actor and Producer,Daughter,Shammi Kapoor
+Shashi Kapoor,Prithviraj Kapoor,Hindi,"Actor, Director and Producer",Son,Prithviraj Kapoor
+Jennifer Kendal,Prithviraj Kapoor,Hindi,Actor,Wife,Shashi Kapoor
+Kunal Kapoor,Prithviraj Kapoor,Hindi,Actor and Ad Film Director,Son,Shashi Kapoor
+Karan Kapoor,Prithviraj Kapoor,Hindi,Actor,Son,Shashi Kapoor
+Sanjana Kapoor,Prithviraj Kapoor,Hindi,Actor,Daughter,Shashi Kapoor
+Aditya Bhattacharya,Prithviraj Kapoor,Hindi,Director,Ex-Husband,Sanjana Kapoor
+Valmik Thapar,Prithviraj Kapoor,Hindi,Writer,Husband,Sanjana Kapoor
+Surinder Kapoor,Surinder Kapoor,Hindi,Producer,,
+Boney Kapoor,Surinder Kapoor,Hindi,Producer,Son,Surinder Kapoor
+Mona Kapoor,Surinder Kapoor,Hindi,Producer,Ex-Wife,Surinder Kapoor
+Arjun Kapoor,Surinder Kapoor,Hindi,Actor,Son,Boney Kapoor
+Sridevi,Surinder Kapoor,Hindi,Actor,Wife,Boney Kapoor
+Anil Kapoor,Surinder Kapoor,Hindi,Actor,Son,Surinder Kapoor
+Sonam Kapoor,Surinder Kapoor,Hindi,Actor,Daughter,Anil Kapoor
+Rhea Kapoor,Surinder Kapoor,Hindi,Producer,Daughter,Anil Kapoor
+Harshvardhan Kapoor,Surinder Kapoor,Hindi,Actor,Son,Anil Kapoor
+Sanjay Kapoor,Surinder Kapoor,Hindi,Actor,Son,Surinder Kapoor
+Mohit Marwah,Surinder Kapoor,Hindi,Actor,Grand Son,Surinder Kapoor
+Shanta Gandhi,Kapur-Pathak-Shah,Hindi,Theatre Director,,
+Dina Pathak,Kapur-Pathak-Shah,Hindi,Dancer,,
+Ratna Pathak,Kapur-Pathak-Shah,Hindi,Actor,Daughter,Dina Pathak
+Naseeruddin Shah,Kapur-Pathak-Shah,Hindi,Actor and Director,Husband,Ratna Pathak
+Surekha Sikri,Kapur-Pathak-Shah,Hindi,Actor,Ex-Sister-in-law,Naseeruddin Shah
+Heeba Shah,Kapur-Pathak-Shah,Hindi,Actor,Daughter,Naseeruddin Shah
+Imaad Shah,Kapur-Pathak-Shah,Hindi,Singer,Son,Naseeruddin Shah
+Vivaan Shah,Kapur-Pathak-Shah,Hindi,Actor,Son,Naseeruddin Shah
+Supriya Pathak,Kapur-Pathak-Shah,Hindi,Actor,Sister,Ratna Pathak
+Pankaj Kapoor,Kapur-Pathak-Shah,Hindi,Actor,Husband,Supriya Pathak
+Neelima Azeem,Kapur-Pathak-Shah,Hindi,Actor,Ex-Wife,Pankaj Kapoor
+Shahid Kapoor,Kapur-Pathak-Shah,Hindi,Actor,Son,Pankaj Kapoor
+Salim Khan,Salim Khan,Hindi,Script Writer,,
+Salma Khan,Salim Khan,Hindi,,Wife,Salim Khan
+Helen,Salim Khan,Hindi,Actor,Wife,Salim Khan
+Salman Khan,Salim Khan,Hindi,Actor,Son,Salim Khan
+Arbaaz Khan,Salim Khan,Hindi,"Actor, Director and Producer",Son,Salim Khan
+Malaika Arora Khan,Salim Khan,Hindi,Actor,Ex-Wife,Arbaaz Khan
+Sohail Khan,Salim Khan,Hindi,"Actor, Director and Producer",Son,Salim Khan
+"Seema Sachdev Khan, wife of Sohail Khan; also known as Seema Sajdeh Khan",Salim Khan,Hindi,,Wife,Sohail Khan
+Alvira Agnihotri,Salim Khan,Hindi,,Daughter,Salim Khan
+Atul Agnihotri,Salim Khan,Hindi,"Actor, Producer and Director",Husband,Alvira Agnihotri
+Dilip Kumar,Dilip Kumar,Hindi,Actor and Producer,,
+Saira Banu,Dilip Kumar,Hindi,Actor,Wife,Dilip Kumar
+K. Asif,Dilip Kumar,Hindi,Film Maker,Brother-in-law,Dilip Kumar
+Nazir Ahmed Khan,Dilip Kumar,Hindi,Actor,Brother-in-law,K. Asif
+Nasir Khan,Dilip Kumar,Hindi,Actor,Brother,Dilip Kumar
+Begum Para,Dilip Kumar,Hindi,Actor,Wife,Nasir Khan
+Ayub Khan,Dilip Kumar,Hindi,Actor,Son,Nasir Khan
+Rukhsana Sultana,Dilip Kumar,Hindi,Activist,Niece,Begum Para
+Amrita Singh,Dilip Kumar,Hindi,Actor,Daughter,Rukhsana Sultana
+Naseem Banu,Dilip Kumar,Hindi,Actor,Mother,Saira Banu
+Shaheen Banu,Dilip Kumar,Hindi,Actor,Niece,Saira Banu
+Sumeet Saigal,Dilip Kumar,Hindi,Actor and Producer,Ex-Husband,Shaheen Banu
+Sayesha Saigal,Dilip Kumar,Hindi,Actor,Daughter,Sumeet Saigal
+Tahir Hussain,Khan-Hussain,Hindi,"Producer, Director and Screen Writer",,
+Aamir Khan,Khan-Hussain,Hindi,"Actor, Director and Producer",Son,Tahir Hussain
+Reena Dutta,Khan-Hussain,Hindi,Producer,Ex-Wife,Aamir Khan
+Kiran Rao,Khan-Hussain,Hindi,"Producer, Screen Writer and Director",Wife,Aamir Khan
+Aditi Rao Hydari,Khan-Hussain,Hindi,Actor,Cousin,Kiran Rao
+Faisal Khan,Khan-Hussain,Hindi,Actor,Brother,Aamir Khan
+Nikhat Khan,Khan-Hussain,Hindi,Producer,Sister,Aamir Khan
+Nasir Hussain,Khan-Hussain,Hindi,"Producer, Director and Screen Writer",Uncle,Aamir Khan
+Mansoor Khan,Khan-Hussain,Hindi,"Producer, Director and Screen Writer",Uncle,Imran Khan
+Tariq Khan,Khan-Hussain,Hindi,Actor,Cousin,Aamir Khan
+Raj Zutshi,Khan-Hussain,Hindi,Actor,Step-Father,Imran Khan
+Imran Khan,Khan-Hussain,Hindi,Actor,Nephew,Aamir Khan
+Rajesh Khanna,Rajesh Khanna,Hindi,Actor,,
+Dimple Kapadia,Rajesh Khanna,Hindi,Actor,Wife,Rajesh Khanna
+Twinkle Khanna,Rajesh Khanna,Hindi,Actor,Daughter,Rajesh Khanna
+Akshay Kumar,Rajesh Khanna,Hindi,Actor and Producer,Husband,Twinkle Khanna
+Rinke Khanna,Rajesh Khanna,Hindi,Actor,Daughter,Rajesh Khanna
+Simple Kapadia,Rajesh Khanna,Hindi,Actor and Costume Designer,Sister,Dimple Kapadia
+Vinod Khanna,Vinod Khanna,Hindi,Actor,,
+Rahul Khanna,Vinod Khanna,Hindi,Actor,Son,Vinod Khanna
+Akshaye Khanne,Vinod Khanna,Hindi,Actor,Son,Vinod Khanna
+Durga Khote,Khote,Hindi,Actor,,
+Vijaya Mehta,Khote,Hindi,Actor,Daughter-in-law,Durga Khote
+Anjali Khote,Khote,Hindi,Producer,Grand Daughter,Durga Khote
+Deven Khote,Khote,Hindi,Producer,Grand Son,Durga Khote
+Anahita Uberoi,Khote,Hindi,Actor,Daughter,Vijaya Mehta
+Shubha Khote,Khote,Hindi,Actor,Niece,Durga Khote
+Viju Khote,Khote,Hindi,Actor,Nephew,Durga Khote
+Bhavna Balsavar,Khote,Hindi,Actor,Daughter,Shubha Khote
+Anupam Kher,Kher,Hindi,Actor,,
+Raju Kher,Kher,Hindi,Actor,Brother,Anupam Kher
+Kirron Kher,Kher,Hindi,Actor,Wife,Anupam Kher
+Sikander Kher,Kher,Hindi,Actor,Son,Kirron Kher
+Gulshan Kumar,Dua,Hindi,Producer,,
+Bhushan Kumar,Dua,Hindi,Producer,Son,Gulshan Kumar
+Tulsi Kumar,Dua,Hindi,Singer,Daughter,Gulshan Kumar
+Divya Khosla Kumar,Dua,Hindi,"Actor, Director and Producer",Wife,Bhushan Kumar
+Uzra Butt,Butt-Sehgal,Hindi,Actor,Sister,Zohra Sehgal
+Zohra Sehgal,Butt-Sehgal,Hindi,Actor,Sister,Uzra Butt
+Kiran Segal,Butt-Sehgal,Hindi,Dancer,Daughter,Zohra Sehgal
+Sardaar Malik,Malik,Hindi,Music Composer,,
+Anu Malik,Malik,Hindi,Music Composer,Son,Sardaar Malik
+Anmol Malik,Malik,Hindi,Singer,Daughter,Anu Malik
+Daboo Malik,Malik,Hindi,Music Director,Son,Sardaar Malik
+Amaal Mallik,Malik,Hindi,Music Composer,Son,Daboo Malik
+Armaan Malik,Malik,Hindi,Singer,Son,Daboo Malik
+Hasrat Jaipuri,Malik,Hindi,Lyricist,Brother-in-law,Sardaar Malik
+Aadar Malik,Malik,Hindi,Actor,Nephew,Anu Malik
+Mukesh,Mukesh,Hindi,Singer,,
+Nitin Mukesh,Mukesh,Hindi,Singer,Son,Mukesh
+Neil Nitin Mukesh,Mukesh,Hindi,Actor,Son,Mukesh
+Deenanath Mangeshkar,Mangeshkar - Burman,Hindi,Music Composer,,
+S.D. Burman,Mangeshkar - Burman,Hindi,Music Composer,Father,R.D. Burman
+Lata Mangeshkar,Mangeshkar - Burman,Hindi,Singer,Daughter,Deenanath Mangeshkar
+Hridaynath Mangeshkar,Mangeshkar - Burman,Hindi,Music Composer,Son,Deenanath Mangeshkar
+Asha Bhonsle,Mangeshkar - Burman,Hindi,Singer,Daughter,Deenanath Mangeshkar
+Meena Mangeshkar,Mangeshkar - Burman,Hindi,Singer,Daughter,Deenanath Mangeshkar
+Usha Mangeshkar,Mangeshkar - Burman,Hindi,Singer,Daughter,Deenanath Mangeshkar
+R.D. Burman,Mangeshkar - Burman,Hindi,Music Composer,Husband,Asha Bhonsle
+Jitendra Abhisheki,Mangeshkar - Burman,Hindi,Music Composer and Vocalist,Cousin,Lata Mangeshkar
+Shounak Abhisheki,Mangeshkar - Burman,Hindi,Music Composer and Vocalist,Son,Jitendra Abhisheki
+Padmini Kolhapure,Mangeshkar - Burman,Hindi,Actor,Niece,Lata Mangeshkar
+Tejaswini Kolhapure,Mangeshkar - Burman,Hindi,Actor,Sister,Padmini Kolhapure
+Shakti Kapoor,Mangeshkar - Burman,Hindi,Actor,Husband,Tejaswini Kolhapure
+Siddhanth Kapoor,Mangeshkar - Burman,Hindi,Actor,Son,Shakti Kapoor
+Shraddha Kapoor,Mangeshkar - Burman,Hindi,Actor,Daughter,Shakti Kapoor
+Jahar Mukherjee,Mukherjee,Hindi,Lyricist,,
+Manas Mukherjee,Mukherjee,Hindi,Music Director,Son,Jahar Mukherjee
+Shaan,Mukherjee,Hindi,Singer,Son,Manas Mukherjee
+Sagarika,Mukherjee,Hindi,Singer,Daughter,Manas Mukherjee
+Rattan Bai,Mukherjee - Samarth,Hindi,Actor,,
+Shobhana Samarth,Mukherjee - Samarth,Hindi,Actor,Daughter,Rattan Bai
+Kumarsen Samarth,Mukherjee - Samarth,Hindi,Director,Ex-Husband,Shobhana Samarth
+Nutan,Mukherjee - Samarth,Hindi,Actor,Daughter,Shobhana Samarth
+Mohnish Behl,Mukherjee - Samarth,Hindi,Actor,Son,Nutan
+Tanuja,Mukherjee - Samarth,Hindi,Actor,Daughter,Shobhana Samarth
+Nalini Jaywant,Mukherjee - Samarth,Hindi,Actor,Cousin,Shobhana Samarth
+Sashadhar Mukherjee,Mukherjee - Samarth,Hindi,Producer,,
+Kishore Kumar,Mukherjee - Samarth,Hindi,Actor and Singer,Brother-in-law,Sashadhar Mukherjee
+Joy Mukherjee,Mukherjee - Samarth,Hindi,Actor,Son,Sashadhar Mukherjee
+Deb Mukherjee,Mukherjee - Samarth,Hindi,Actor,Son,Sashadhar Mukherjee
+Ashutosh Gowarikar,Mukherjee-Samarth,Hindi,Director,Son-in-law,Deb Mukherjee
+Ayan Mukerji,Mukherjee - Samarth,Hindi,Director,Son,Deb Mukherjee
+Shomu Mukherjee,Mukherjee - Samarth,Hindi,"Director, Producer and Screen Writer",Son,Sashadhar Mukherjee
+Kajol,Mukherjee - Samarth,Hindi,Actor,Daughter,Shomu Mukherjee
+Tanisha,Mukherjee - Samarth,Hindi,Actor,Daughter,Shomu Mukherjee
+Subodh Mukherjee,Mukherjee - Samarth,Hindi,Director and Producer,Brother,Sashadhar Mukherjee
+Shyam Mukherjee,Mukherjee - Samarth,Hindi,Editor,Nephew,Sashadhar Mukherjee
+Krishna Roy,Mukherjee - Samarth,Hindi,Singer,Wife,Ram Mukherjee
+Ram Mukherjee,Mukherjee - Samarth,Hindi,"Director, Producer and Screen Writer",Nephew,Sashadhar Mukherjee
+Rani Mukherjee,Mukherjee - Samarth,Hindi,Actor,Daughter,Ram Mukherjee
+Raja Mukherjee,Mukherjee - Samarth,Hindi,Director,Son,Ram Mukherjee
+Debashree Roy,Mukherjee - Samarth,Hindi,Actor,Sister,Krishna Roy
+Sharbani Mukherjee,Mukherjee - Samarth,Hindi,Actor,Niece,Shomu Mukherjee
+Samrat Mukherjee,Mukherjee - Samarth,Hindi,Actor,Nephew,Shomu Mukherjee
+Murad,Murad-Rai,Hindi,Actor,,
+Amanullah Khan,Murad-Rai,Hindi,Script Writer,Brother-in-law,Murad
+Raza Murad,Murad-Rai,Hindi,Actor,Son,Murad
+Zeenat Aman,Murad-Rai,Hindi,Actor,Daughter,Amanullah Khan
+Mazhar Khan,Murad-Rai,Hindi,Actor,Husband,Zeenat Aman
+Sanober Kabir,Murad-Rai,Hindi,Actor,Niece,Raza Murad
+Gulshan Rai,Murad-Rai,Hindi,Producer,,
+Rajiv Rai,Murad-Rai,Hindi,Director and Screen Writer,Son,Gulshan Rai
+Sonam,Murad-Rai,Hindi,Actor,Niece,Raza Murad
+Udit Narayan Jha,Jha,Hindi,Singer,,
+Aditya Narayan Jha,Jha,Hindi,Singer and TV Presenter,Son,Udit Narayan
+Prem Nath,Nath,Hindi,Actor,,
+Bina Rai,Nath,Hindi,Actor,Wife,Prem Nath
+Prem Krishen,Nath,Hindi,Actor,Son,Prem Nath
+Siddharth Malhotra,Nath,Hindi,Director,Son,Prem Kishen
+Arjun Malhotra,Nath,Hindi,Director,Grand Son,Prem Nath
+Raj Kapoor,Nath,Hindi,"Actor, Director and Producer",Brother-in-law,Prem Nath
+Prem Chopra,Nath,Hindi,Actor,Brother-in-law,Prem Nath
+Rajendra Nath,Nath,Hindi,Actor,Brother,Prem Nath
+Narendra Nath,Nath,Hindi,Actor,Brother,Prem Nath
+Suresh Oberoi,Oberoi,Hindi,Actor,,
+Vivek Oberoi,Oberoi,Hindi,Actor,Son,Suresh Oberoi
+Akshay Oberoi,Oberoi,Hindi,Actor,Nephew,Suresh Oberoi
+Bipin Chandra Pal,Pal,Hindi,Nationalist,,
+Niranjan Pal,Pal,Hindi,"Playwright, Screen Writer and Director",Son,Bipin Chandra Pal
+Colin Pal,Pal,Hindi,Publicist,Son,Niranjan Pal
+Deep Pal,Pal,Hindi,Cinematographer,Son,Colin Pal
+Pandit Pratap Narayan,Pandit,Hindi,Classical Vocalist,Brother,Pandit Jasraj
+Pandit Jasraj,Pandit,Hindi,Classical Vocalist,,
+Jatin Pandit,Pandit,Hindi,Music Composer,Son,Pandit Pratap Jasraj
+Lalit Pandit,Pandit,Hindi,Music Composer,Son,Pandit Pratap Jasraj
+Sulakshana Pandit,Pandit,Hindi,Playback Singer,Daughter,Pandit Pratap Jasraj
+Vijayta Pandit,Pandit,Hindi,Actor,Daughter,Pandit Pratap Jasraj
+Shweta Pandit,Pandit,Hindi,Singer,Daughter,Vijayta Pandit
+Shrraddha Pandit,Pandit,Hindi,Singer,Niece,Vijayta Pandit
+Yash Pandit,Pandit,Hindi,Actor,Nephew,Vijayta Pandit
+Hemlata,Pandit,Hindi,Singer,Cousin,Sulakshana Pandit
+Jagdish Prasad,Pandit,Hindi,Classical Vocalist,Cousin,Sulakshana Pandit
+Mansoor Ali Khan Pataudi,Pataudi,Hindi,Cricketer,,
+Sharmila Tagore,Pataudi,Hindi,Actor,Wife,Mansoor Ali Khan Pataudi
+Saif Ali Khan,Pataudi,Hindi,Actor and Producer,Son,Mansoor Ali Khan Pataudi
+Amrita Singh,Dilip Kumar,Hindi,Actor,Ex-Wife,Saif Ali Khan
+Sara Ali Khan,Pataudi,Hindi,Actor,Daughter,Saif Ali Khan
+Ibrahim Ali Khan,Pataudi,Hindi,Actor,Son,Saif Ali Khan
+Kareena Kapoor,Pataudi,Hindi,Actor,Wife,Saif Ali Khan
+Soha Ali Khan,Pataudi,Hindi,Actor,Daughter,Mansoor Ali Khan Pataudi
+Kunal Khemu,Pataudi,Hindi,Actor,Husband,Soha Ali Khan
+Ameesha Patel,Patel,Hindi,Actor,,
+Ashmit Patel,Patel,Hindi,Actor,Brother,Ameesha Patel
+Madan Puri,Puri,Hindi,Actor,Brother,Amrish Puri
+Chaman Puri,Puri,Hindi,Actor,Brother,Madan Puri
+Amrish Puri,Puri,Hindi,Actor,Brother,Chaman Puri
+K.L. Saigal,Puri,Hindi,Singer,Cousin,Amrish Puri
+Dara Singh,Randhawa,Hindi,"Actor, Director and Producer",,
+Parduman Randhawa,Randhawa,Hindi,Actor,Son,Dara Singh
+Vindu Dara Singh,Randhawa,Hindi,Actor,Son,Dara Singh
+Farah Naaz,Randhawa,Hindi,Actor,Ex-Wife,Vindu Dara Singh
+Amrik Singh Randhawa,Randhawa,Hindi,Producer,Son,Dara Singh
+Randhawa,Randhawa,Hindi,Actor,Brother,Dara Singh
+Malika,Randhawa,Hindi,Actor,Wife,Randhawa
+Shaad Randhawa,Randhawa,Hindi,Actor,Son,Randhawa
+Mumtaz,Randhawa,Hindi,Actor,Sister,Malika
+Siddharth Roy Kapur,Roy Kapur,Hindi,Producer,Brother,Aditya Roy Kapur
+Aditya Roy Kapur,Roy Kapur,Hindi,Actor,Brother,Siddharth Roy Kapur
+Kunaal Roy Kapur,Roy Kapur,Hindi,Actor,Brother,Siddharth Roy Kapur
+Vidya Balan,Roy Kapur,Hindi,Actor,Wife,Siddharth Roy Kapur
+Roshan,Roshan,Hindi,Music Composer,,
+J. Om Prakash,Roshan,Hindi,Producer,Father-in-law,Rakesh Roshan
+Rakesh Roshan,Roshan,Hindi,"Producer, Director, Screen Writer, Actor",,Roshan
+Rajesh Roshan,Roshan,Hindi,Music Director,Brother,Rakesh Roshan
+Hrithik Roshan,Roshan,Hindi,Actor,Son,Rakesh Roshan
+Sussanne Khan,Roshan,Hindi,Interior Designer,Ex-Wife,Hrithik Roshan
+Zayed Khan,Roshan,Hindi,Actor,Brother,Sussanne Khan
+DJ Aqeel,Roshan,Hindi,Music Composer,Brother-in-law,Sussanne Khan
+Sanjay Khan,Roshan,Hindi,"Producer, Director and Actor",Father,Sussanne Khan
+Feroz Khan,Roshan,Hindi,Actor,Uncle,Sussanne Khan
+Fardeen Khan,Roshan,Hindi,Actor,Son,Feroz Khan
+Mumtaz,Roshan,Hindi,Actor,Mother-in-law,Fardeen Khan
+Praveen Joshi,Roy-Joshi-Irani,Hindi,Theatre Artist and Director,,
+Sarita Joshi,Roy-Joshi-Irani,Hindi,Actor,Wife,Praveen Joshi
+Ketki Dave,Roy-Joshi-Irani,Hindi,Actor,Daughter,Sarita Joshi
+Rasik Dave,Roy-Joshi-Irani,Hindi,Actor,Husband,Ketki Dave
+Riddhi Dave,Roy-Joshi-Irani,Hindi,Actor,Daughter,Ketki Dave
+Purbi Joshi,Roy-Joshi-Irani,Hindi,Actor,Daughter,Sarita Joshi
+Aravind Joshi,Roy-Joshi-Irani,Hindi,Theatre Artist,Brother,Praveen Joshi
+Sharman Joshi,Roy-Joshi-Irani,Hindi,Actor,Son,Aravind Joshi
+Mansi Joshi Roy,Roy-Joshi-Irani,Hindi,Theatre Artist,Daughter,Aravind Joshi
+Rohit Roy,Roy-Joshi-Irani,Hindi,Actor,Husband,Mansi Joshi Roy
+Ronit Roy,Roy-Joshi-Irani,Hindi,Actor,Brother,Rohit Roy
+Padmarani,Roy-Joshi-Irani,Hindi,Actor,,
+Daisy Irani,Roy-Joshi-Irani,Hindi,Actor,Daughter,Padmarani
+Aruna Irani,Roy-Joshi-Irani,Hindi,Actor,Niece,Padmarani
+Sandesh Kohli,Roy-Joshi-Irani,Hindi,Director and Screen Writer,Husband,Aruna Irani
+Adi Irani,Roy-Joshi-Irani,Hindi,Actor,Brother,Aruna Irani
+Indra Kumar,Roy-Joshi-Irani,Hindi,Director and Producer,Brother,Aruna Irani
+Shweta Irani,Roy-Joshi-Irani,Hindi,Actor,Daughter,Indra Kumar
+Firoz Irani,Roy-Joshi-Irani,Hindi,Producer,Brother,Aruna Irani
+Shakti Samanta,Samanta,Hindi,Director and Producer,,
+Ashim Samanta,Samanta,Hindi,Director and Producer,Son,Shakti Samanta
+Sapru,Sapru,Hindi,Actor,,
+Tej Sapru,Sapru,Hindi,Actor,Son,Sapru
+Priti Sapru,Sapru,Hindi,Actor,Daughter,Sapru
+Reema Rakesh Nath,Sapru,Hindi,Director and Script Writer,Daughter,Sapru
+Rakesh Nath,Sapru,Hindi,Producer,Husband,Reema Rakesh Nath
+Karan Nath,Sapru,Hindi,Actor,Son,Reema Rakesh Nath
+Suchitra Sen,Sen,Hindi,,,
+Moonmoon Sen,Sen,Hindi,Actor,Daughter,Suchitra Sen
+Raima Sen,Sen,Hindi,Actor,Daughter,Moonmoon Sen
+Riya Sen,Sen,Hindi,Actor,Daughter,Moonmoon Sen
+Chidananda Dasgupta,Chidananda Dasgupta,Hindi,Director,,
+Aparna Sen,Chidananda Dasgupta,Hindi,Actor,Daughter,Chidananda Dasgupta
+Mukul Sharma,Chidananda Dasgupta,Hindi,Journalist,Ex-Husband,Aparna Sen
+Konkona Sen Sharma,Chidananda Dasgupta,Hindi,Actor,Daughter,Aparna Sen
+Ranvir Shorey,Chidananda Dasgupta,Hindi,Actor,Husband,Konkona Sen Sharma
+Sunil Shetty,Shetty,Hindi,Actor,,
+Mana Shetty,Shetty,Hindi,Entrepreneur and Fashion Designer,Wife,Sunil Shetty
+Athiya Shetty,Shetty,Hindi,Actor,Daughter,Sunil Shetty
+Shilpa Shetty,Shetty-Kundra,Hindi,Actor and Producer,,
+Raj Kundra,Shetty-Kundra,Hindi,Business Person,Husband,Shilpa Shetty
+Shamita Shetty,Shetty-Kundra,Hindi,Actor,Sister,Shilpa Shetty
+Jackie Shroff,Shroff,Hindi,Actor and Producer,,
+Ayesha Dutt,Shroff,Hindi,Actor,Wife,Jackie Shroff
+Tiger Shroff,Shroff,Hindi,Actor,Son,Jackie Shroff
+Kirshna Shroff,Shroff,Hindi,Assistant Director and Producer,Daughter,Jackie Shroff
+V.Shantaram,Shantaram-Pendharkar,Hindi,"Actor, Director and Producer",,
+Jayshree Shantaram,Shantaram-Pendharkar,Hindi,Actor,Ex-Wife,Shantaram
+Sandhya Shantaram,Shantaram-Pendharkar,Hindi,Actor,Wife,Shantaram
+Kiran Shantaram,Shantaram-Pendharkar,Hindi,Producer,Son,Shantaram
+Rajshree,Shantaram-Pendharkar,Hindi,Actor,Daughter,Shantaram
+Pandit Jasraj,Shantaram-Pendharkar,Hindi,Vocalist,Son-in-law,Shantaram
+Ranjana Deshmukh,Shantaram-Pendharkar,Hindi,Actor,Niece,Sandhya Shantaram
+Durga Jasraj,Shantaram-Pendharkar,Hindi,Producer,Daughter,Pandit Jasraj
+Siddharth Ray,Shantaram-Pendharkar,Hindi,Actor,Grand Son,Shantaram
+Shantipriya,Shantaram-Pendharkar,Hindi,Actor,Wife,Siddharth Ray
+Bhanupriya,Shantaram-Pendharkar,Hindi,Actor,Sister,Shantipriya
+Bhalji Pendharkar,Shantaram-Pendharkar,Hindi,Director,Cousin,Shantaram
+Baburao Pendharkar,Shantaram-Pendharkar,Hindi,"Actor, Director, Producer and Screen Writer",Brother,Bhalji Pendharkar
+Master Vinayak,Shantaram-Pendharkar,Hindi,Actor,Brother,Bhalji Pendharkar
+Prabhakar Pendharkar,Shantaram-Pendharkar,Hindi,Writer,Son,Bhalji Pendharkar
+Nanda,Shantaram-Pendharkar,Hindi,Actor,Daughter,Master Vinayak
+Jayshree T.,Shantaram-Pendharkar,Hindi,Actor,Sister-in-law,Nanda
+Meena T.,Shantaram-Pendharkar,Hindi,Actor,Sister,Jayashree
+Shreyas Talpade,Shantaram-Pendharkar,Hindi,Actor,Nephew,Jayashree
+Shatrughan Sinha,Sinha,Hindi,Actor and Politician,,
+Poonam Sinha,Sinha,Hindi,Actor and Producer,Wife,Shatrughan Sinha
+Luv Sinha,Sinha,Hindi,Actor,Son,Shatrughan Sinha
+Sonakshi Sinha,Sinha,Hindi,Actor,Daughter,Shatrughan Sinha
+Bhavna Ruparel,Sinha,Hindi,Actor,Cousin,Sonakshi Sinha
+Pooja Ruparel,Sinha,Hindi,Actor,Sister,Bhavna Ruparel
+G.P. Sippy,Sippy,Hindi,Producer and Director,,
+Ramesh Sippy,Sippy,Hindi,Director,Son,G.P. Sippy
+Kiran Juneja,Sippy,Hindi,Actor,Wife,Ramesh Sippy
+Rohan Sippy,Sippy,Hindi,Director and Producer,Son,Ramesh Sippy
+Shekhar Suman,Suman,Hindi,Actor,,
+Adhyayan Suman,Suman,Hindi,Actor,Son,Shekhar Suman
+Ravi Tandon,Tandon,Hindi,Director and Producer,,
+Raveena Tandon,Tandon,Hindi,Actor and Producer,Daughter,Ravi Tandon
+Anil Thadani,Tandon,Hindi,Distributor,Husband,Raveena Tandon
+Rajiv Tandon,Tandon,Hindi,Director,Son,Ravi Tandon
+Mac Mohan,Tandon,Hindi,Actor,Uncle,Raveena Tandon
+Manjari Makijany,Tandon,Hindi,"Director, Producer and Screen Writer",Daughter,Mac Mohan
