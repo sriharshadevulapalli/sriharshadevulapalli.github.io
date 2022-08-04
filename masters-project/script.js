@@ -11,11 +11,12 @@ function initScrub(videoId) {
     let video = document.querySelector(videoId)
     let src = video.currentSrc || video.src;
     // console.log(video, src);
-
     // Scroll control
     const videoScrub = gsap.timeline({
         onUpdate: () => {
-            console.log(videoScrub.progress().toFixed(2));
+            
+        console.log(videoScrub.progress().toFixed(2))
+            
         },
         // currentTime: video.duration,
         scrollTrigger: {
@@ -61,31 +62,3 @@ function initScrub(videoId) {
 initScrub("#video1")
 initScrub("#video2")
 
-// gsap.to(".one",{
-//   scrollTrigger: {
-//     trigger: ".video-container",
-//     toggleActions: "restart none none none",
-// },
-//   x:25,
-//   y: 50,
-//  });
-
-//  gsap.to(".two",{
-//   scrollTrigger: {
-//     trigger: ".video-container",
-//     toggleActions: "restart none none none",
-// },
-//   x:25,
-//   y: 100,
-//  });
-
-//  gsap.to(".three",{
-//   scrollTrigger: {
-//     trigger: ".video-container",
-//     toggleActions: "restart none none none",
-// },
-//   x:25,
-//   y: 200,
-//  });
-
-/* ---------------------------------- */

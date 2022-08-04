@@ -63,5 +63,13 @@ body{
 video {
   height: auto;
   width: 100%;
-  justify-content: ;
+}
+
+p{
+  max-width: 660px;
+  margin: 0 auto;
+  text-align: left;
+  font-size : 19px;
+  line-height: 1.6;
+  margin-bottom : 2em;
 }
