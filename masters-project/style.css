@@ -22,14 +22,110 @@ body{
   margin: 0 auto;
 }
 
-.step p {
-  text-align: center;
+
+/* headline {
+  text-align: left;
   padding: 1rem;
-  font-size: 1rem;
-  margin-bottom: 40vh;
+  font-size: 3rem;
+  margin-top: -80vh;
+  margin-bottom: 70vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+} */
+
+.zero h1 {
+  text-align: left;
+  padding: 1rem;
+  font-size: 40px;
+  margin-top: -80vh;
+  margin-bottom: 70vh;
   color: #fff;
   background-color: rgb(17, 17, 17);
 }
+
+.zero p {
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.85rem;
+  margin-top: -70vh;
+  margin-bottom: 70vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+}
+
+.one p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+}
+
+.two p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 60vh;
+  margin-bottom: 60vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+}
+
+.three p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 90vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+}
+
+.four p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 90vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+}
+
+.five p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 90vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+}
+
+.six p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 90vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+}
+.seven p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 90vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+}
+.eight p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 90vh;
+  color: #fff;
+  background-color: rgb(17, 17, 17);
+}
+
+
 
 #empty {
   text-align: center;
@@ -38,14 +134,14 @@ body{
   margin-bottom: 50vh;
   color: #fff;
 }
-.step h1 {
+/* .step h1 {
   text-align: left;
   padding: 1rem;
   font-size: 3rem;
   margin-bottom: 70vh;
   color: #fff;
   background-color: rgba(50, 50, 50, 0.75);
-}
+} */
 
 .step:last-child::after {
   content: 'this is a spacer';
@@ -60,6 +156,16 @@ body{
   margin-bottom: 5%
 }
 
+
+.media{
+  text-align:center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%
+}
+
+
 video {
   height: auto;
   width: 100%;
@@ -72,4 +178,104 @@ p{
   font-size : 19px;
   line-height: 1.6;
   margin-bottom : 2em;
+}
+
+.details p{
+  max-width: 660px;
+  margin: 0 auto;
+  text-align: left;
+  font-size : 15px;
+  line-height: 1.6;
+  margin-bottom : 2em;
+  font-weight: 600;
+}
+
+strong{
+  text-transform: uppercase;
+  margin-right: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+
+#g-citymaps-new-box ,
+#g-citymaps-new-box .g-artboard {
+  margin:0 auto;
+}
+#g-citymaps-new-box p {
+  margin:0;
+}
+#g-citymaps-new-box .g-aiAbs {
+  position:absolute;
+}
+#g-citymaps-new-box .g-aiImg {
+  position:absolute;
+  top:0;
+  display:block;
+  width:100% !important;
+}
+#g-citymaps-new-box .g-aiSymbol {
+  position: absolute;
+  box-sizing: border-box;
+}
+#g-citymaps-new-box .g-aiPointText p { white-space: nowrap; }
+#g-citymaps-new-Artboard_2 {
+  position:relative;
+  overflow:hidden;
+}
+#g-citymaps-new-Artboard_2 p {
+  font-family:Source Sans Pro;
+  font-weight:700;
+  line-height:16px;
+  height:auto;
+  opacity:1;
+  letter-spacing:0em;
+  font-size:14px;
+  text-align:left;
+  color:rgb(0,0,0);
+  text-transform:none;
+  padding-bottom:0;
+  padding-top:0;
+  mix-blend-mode:normal;
+  font-style:normal;
+  position:static;
+}
+#g-citymaps-new-Artboard_2 .g-pstyle0 {
+  font-weight:300;
+  height:16px;
+}
+#g-citymaps-new-Artboard_2 .g-pstyle1 {
+  font-weight:600;
+  line-height:25px;
+  height:25px;
+  font-size:21px;
+}
+#g-citymaps-new-Artboard_2 .g-pstyle2 {
+  height:16px;
+  opacity:0.8;
+}
+#g-citymaps-new-Artboard_2 .g-pstyle3 {
+  font-weight:400;
+  font-style:italic;
+  line-height:21px;
+  height:21px;
+  font-size:17px;
+  color:rgb(70,104,52);
+}
+#g-citymaps-new-Artboard_2 .g-pstyle4 {
+  font-weight:300;
+  font-style:italic;
+  line-height:21px;
+  height:21px;
+  font-size:17px;
+  color:rgb(47,122,173);
+}
+#g-citymaps-new-Artboard_2 .g-pstyle5 {
+  height:16px;
+}
+#g-citymaps-new-Artboard_2 .g-pstyle6 {
+  font-weight:300;
+  line-height:21px;
+  height:21px;
+  font-size:17px;
 }

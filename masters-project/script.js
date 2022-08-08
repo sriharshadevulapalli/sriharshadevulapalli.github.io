@@ -53,7 +53,7 @@ function initScrub(videoId) {
                         video.pause()
                     }, { once: true })
                     video.setAttribute("src", blobURL)
-                    video.currentTime = t + 0.01
+                    video.currentTime = t + 0.001
                 })
         }
     }, 1000)
