@@ -59,7 +59,7 @@ body{
   padding: 1rem;
   font-size: 19px;
   margin-top: -75vh;
-  margin-bottom: 70vh;
+  margin-bottom: 50vh;
   color: rgb(17, 17, 17);
   background-color: #fff;
 }
@@ -70,7 +70,7 @@ body{
   padding: 1rem;
   font-size: 19px;
   /* margin-top: 60vh; */
-  margin-bottom: 120vh;
+  margin-bottom: 60vh;
   color: rgb(17, 17, 17);
   background-color: #fff;
 }
@@ -113,13 +113,17 @@ body{
   color: #000000;
 }
 
+highlight-yellow {
+  background: #DFA400;
+}
+
 .four p {
   text-align: center;
   line-height: 1.3;
   padding: 1rem;
   font-size: 19px;
-  margin-top: -80vh;
-  margin-bottom: 90vh;
+  margin-top: -60vh;
+  margin-bottom: 50vh;
   color: rgb(17, 17, 17);
   background-color: #fff;
 }
@@ -129,7 +133,7 @@ body{
   line-height: 1.3;
   padding: 1rem;
   font-size: 19px;
-  margin-bottom: 90vh;
+  margin-bottom: 50vh;
   color: rgb(17, 17, 17);
   background-color: #fff;
 }
@@ -214,7 +218,16 @@ p{
   text-align: left;
   font-size : 19px;
   line-height: 1.6;
-  margin-bottom : 2em;
+  margin-bottom : 1.75em;
+}
+
+
+i{
+  margin: 0 auto;
+  text-align: left;
+  font-size : 16px;
+  line-height: 1.6;
+  margin-bottom : 1.75em;
 }
 
 h3{
@@ -244,85 +257,74 @@ strong{
   letter-spacing: 1px;
 }
 
-
-#g-citymaps-new-box ,
-#g-citymaps-new-box .g-artboard {
-  margin:0 auto;
-}
-#g-citymaps-new-box p {
-  margin:0;
-}
-#g-citymaps-new-box .g-aiAbs {
-  position:absolute;
-}
-#g-citymaps-new-box .g-aiImg {
-  position:absolute;
-  top:0;
-  display:block;
-  width:100% !important;
-}
-#g-citymaps-new-box .g-aiSymbol {
-  position: absolute;
-  box-sizing: border-box;
-}
-#g-citymaps-new-box .g-aiPointText p { white-space: nowrap; }
-#g-citymaps-new-Artboard_2 {
-  position:relative;
-  overflow:hidden;
-}
-#g-citymaps-new-Artboard_2 p {
-  font-family:Source Sans Pro;
-  font-weight:700;
-  line-height:16px;
-  height:auto;
-  opacity:1;
-  letter-spacing:0em;
-  font-size:14px;
-  text-align:left;
-  color:rgb(0,0,0);
-  text-transform:none;
-  padding-bottom:0;
-  padding-top:0;
-  mix-blend-mode:normal;
-  font-style:normal;
-  position:static;
-}
-#g-citymaps-new-Artboard_2 .g-pstyle0 {
-  font-weight:300;
-  height:16px;
-}
-#g-citymaps-new-Artboard_2 .g-pstyle1 {
-  font-weight:600;
-  line-height:25px;
-  height:25px;
-  font-size:21px;
-}
-#g-citymaps-new-Artboard_2 .g-pstyle2 {
-  height:16px;
-  opacity:0.8;
-}
-#g-citymaps-new-Artboard_2 .g-pstyle3 {
-  font-weight:400;
-  font-style:italic;
-  line-height:21px;
-  height:21px;
-  font-size:17px;
-  color:rgb(70,104,52);
-}
-#g-citymaps-new-Artboard_2 .g-pstyle4 {
-  font-weight:300;
-  font-style:italic;
-  line-height:21px;
-  height:21px;
-  font-size:17px;
-  color:rgb(47,122,173);
-}
-#g-citymaps-new-Artboard_2 .g-pstyle5 {
-  height:16px;
-}
-#g-citymaps-new-Artboard_2 .g-pstyle6 {
-  font-weight:300;
-  line-height:21px;
-  height:21px;
-  font-size:17px;
-}
+#g-citymaps-final_pdf-box ,
+	#g-citymaps-final_pdf-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-citymaps-final_pdf-box p {
+		margin:0;
+	}
+	#g-citymaps-final_pdf-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-citymaps-final_pdf-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-citymaps-final_pdf-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-citymaps-final_pdf-box .g-aiPointText p { white-space: nowrap; }
+	#g-citymaps-final_pdf-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-citymaps-final_pdf-Artboard_1 p {
+		font-family:Source Sans Pro;
+		font-weight:400;
+		line-height:15px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:15px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-citymaps-final_pdf-Artboard_1 .g-pstyle0 {
+		font-weight:600;
+		line-height:22px;
+		height:22px;
+		font-size:16px;
+	}
+	#g-citymaps-final_pdf-Artboard_1 .g-pstyle1 {
+		font-weight:300;
+		line-height:16px;
+		height:16px;
+		font-size:14px;
+	}
+	#g-citymaps-final_pdf-Artboard_1 .g-pstyle2 {
+		height:15px;
+		text-align:center;
+	}
+	#g-citymaps-final_pdf-Artboard_1 .g-pstyle3 {
+		font-weight:300;
+		font-style:italic;
+		line-height:22px;
+		height:22px;
+		font-size:18px;
+	}
+	#g-citymaps-final_pdf-Artboard_1 .g-pstyle4 {
+		font-weight:300;
+		line-height:22px;
+		height:22px;
+		font-size:18px;
+	}
